@@ -10,7 +10,7 @@ class App extends Component {
 
 			<Router>
 				<Switch>
-					{/* <Route exact="/" path="/" component={Login}/> */}
+					<Route exact="/" path="/" component={QRNaira}/>
           <Route exact="/qr_coin_naira" path="/qr_coin_naira" component={QRNaira}/>
 					<Route path="*" component={NotFound} />
 				</Switch>
