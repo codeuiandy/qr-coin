@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.content-wrap-action-box{
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    height: fit-content;
+    padding:20px 20px 40px 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logs-3-col-box{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'box1 box1 box1 box1'
+                         'box2 box2 box3 box3';
+                         grid-gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.log-box-one{
+    background-color: red;
+    grid-area: box1;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.log-box-two{
+    background-color: blue;
+    grid-area: box2;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.log-box-three{
+    background-color: pink;
+    grid-area: box3;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+
+
+.toggle-hide-showAcc input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 45px;
+    height: 25px;
+    background-color: #EAEAEA;
+    border-radius: 50px;
+    outline: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .toggle-hide-showAcc input:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width:20px;
+    background-color: #ffffff;
+    border-radius: 50px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .toggle-hide-showAcc input:checked {
+    background-color: #48C448;
+  
   }
-}
+  
+  .toggle-hide-showAcc input:checked:before {
+    transform: translate(100%);
+  }
