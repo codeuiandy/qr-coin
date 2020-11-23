@@ -9,33 +9,72 @@
 .logs-3-col-box{
     width: 100%;
     display: grid;
-    grid-template-areas: 'box1 box1 box1 box1'
-                         'box2 box2 box3 box3';
+    grid-template-areas: 'box1 box1'
+                         'box2  box3';
                          grid-gap: 10px;
+
 }
 
 .log-box-one{
-    background-color: red;
+    background-color: transparent;
     grid-area: box1;
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.37);
 }
 
 .log-box-two{
-    background-color: blue;
-    grid-area: box2;
-    width: 100%;
-    height: 100px;
+    background-color: transparent;
+    width: 49%;
+    height: fit-content;
     border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    padding-bottom: 30px;
+    min-height: 180px;
 }
 
 .log-box-three{
-    background-color: pink;
-    grid-area: box3;
-    width: 100%;
-    height: 100px;
+  background-color: transparent;
+    width: 48%;
+    height: fit-content;
     border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    padding-bottom: 30px;
+    min-height: 180px;
+}
+
+.acc-bal-col1{
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  /* padding-top: 15px; */
+}
+
+.action-images-naira{
+  display: flex;
+  padding-right: 25px;
+}
+
+.action-images-naira img{
+  width: 50px;
+  height: 50px;
+  
+}
+
+.toggle-hide-showAcc{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.data-view-col-box{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 
@@ -43,8 +82,8 @@
 .toggle-hide-showAcc input {
     -webkit-appearance: none;
     position: relative;
-    width: 45px;
-    height: 25px;
+    width: 30px;
+    height: 20px;
     background-color: #EAEAEA;
     border-radius: 50px;
     outline: none;
@@ -55,8 +94,8 @@
     position: absolute;
     top: 2px;
     left: 0;
-    height: 20px;
-    width:20px;
+    height: 15px;
+    width:15px;
     background-color: #ffffff;
     border-radius: 50px;
   }
@@ -69,3 +108,199 @@
   .toggle-hide-showAcc input:checked:before {
     transform: translate(100%);
   }
+
+  .acc-bal-7yhgu{
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+.acc-bal-7yu{
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.acc-bal-7yu span{
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.toggle-hide-showAcc{
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.toggle-hide-showAcc input{
+ margin-left:12px;
+}
+
+.imgWrap-naira{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 30px;
+  text-align: center;
+  padding: 6px 20px 9px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.imgWrap-naira-active{
+  background-color: rgba(128, 128, 128, 0.123);
+}
+
+.imgWrap-naira span{
+  font-weight: 600;
+  font-size: 12px;
+}
+.deposit-option-header{
+  margin-top: 10px;
+}
+
+.deposit-option-header h1{
+  font-size: 17px;
+}
+
+.deposit-option-header p{
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+.deposit-options{
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F9;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+}
+
+.payment-sytem h1{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.payment-sytem p{
+margin-top: 2px;
+font-size: 12px;
+}
+
+.deposit-options img{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.withdraw-header{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  margin-top: 19px;
+  width: 90%;
+}
+.widrawTitle{
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.widrawPlus{
+  color: #FFB500;
+  font-weight: 500;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.widrawPlus img{
+  margin-right: -1px;
+  /* padding-top: 10px; */
+  position: relative;
+  top: 4px;
+}
+
+.withdraw-info p{
+  font-size: 0.8em;
+  color: #0A1531;
+  margin-top: 6px;
+}
+
+.withdraw-wrap form{
+  margin-top: 15px;
+  width: 90%;
+}
+
+.input-withdraw-wrap{
+  margin-bottom: 17px;
+}
+.amount-withdraw-wrap{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3px;
+    padding-right: 13px;
+}
+
+.amount-withdraw-wrap span{
+ font-size: 0.7em;
+ 
+color: #0a1531;
+opacity: 0.69;
+
+}
+
+.withdraw-info{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.input-withdraw-wrap input{
+  height: 45px;
+border-radius: 7px;
+background: #fff;
+border: 1px solid rgba(10, 21, 49, 0.21);
+width: 97%;
+padding-left: 10px;
+color: #0a1531;
+opacity: 0.69;
+font-weight: 500;
+padding: 2px 10px;
+}
+
+
+.input-withdraw-wrap select{
+  height: 50px;
+border-radius: 7px;
+background: #fff;
+border: 1px solid rgba(10, 21, 49, 0.21);
+width: 100%;
+color: #0a1531;
+opacity: 0.69;
+font-weight: 500;
+text-indent: 1px;
+padding: 2px 7px;
+}
+
+.wthdraw-btn button{
+  width: 153px;
+height: 55px;
+background: #0d1c3e;
+color: white;
+font-weight: 500;
+border-radius: 4px;
+border: none;
+margin-top: 10px;
+cursor: pointer;
+}
+
+.withdraw-header-transations{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 19px;
+}
