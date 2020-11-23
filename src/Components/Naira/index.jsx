@@ -3,6 +3,7 @@ import Layout from '../Layout/index'
 import basketImg from '../../Assets/basket.png'
 import BankImg from '../../Assets/bank.png'
 import AtmImg from '../../Assets/atm.png'
+import WithdrawIcon from '../../Assets/withdraw.png'
 import DepositOptions from './DepositsOptions'
 import Withdraw from './Withdraw'
 export default function Index(props) {
@@ -71,7 +72,40 @@ export default function Index(props) {
                             <span className="widrawTitle">NGN DEPOSIT HISTORY</span>
                             <span className="widrawPlus">View More</span>
                         </div>
+
+                        {
+                            [...'1234'].map((data)=>{return(
+                                <div className="withdraw-transations-body">
+
+                                <div className="tr-icon">
+                                    <img src={WithdrawIcon} alt=""/>
+                                </div>
+    
+                                <div className="withdraw-details">
+                                    <div className="rugw6">
+    
+                                       <div className="tr-amount655">
+                                           <h1>Deposit</h1>
+                                            <p>Nov 3, 12:34 PM</p>
+                                       </div>
+    
+                                       <div className="tr-amount">
+                                           <h1>₦4,490.00</h1>
+                                       </div>
+    
+                                    </div>
+                                    
+                                    <div className="hr-line-transations"></div>
+    
+                                </div>
+    
+                            </div>
+    
+                            )})
+                           }
+
                         
+
                        </div>
 
                    </div>

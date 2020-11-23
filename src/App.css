@@ -303,4 +303,56 @@ cursor: pointer;
   justify-content: space-between;
   width: 95%;
   margin-top: 19px;
+  padding-left: 11px;
+  margin-bottom: 21px;
 }
+
+.withdraw-transations-body{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tr-icon{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hr-line-transations{
+  width: 100%;
+  height: 0.8px;
+  background-color: rgba(128, 128, 128, 0.226);
+  position: relative;
+  top: 8px;
+}
+
+.withdraw-details{
+  width: 85%;
+ margin-right: 30px;
+}
+
+.rugw6{
+  display: flex;
+  justify-content: space-between;
+}
+.tr-amount655 h1{
+  font-size: 1.1em;
+}
+
+
+.tr-amount655 p{
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+.tr-amount{
+font-weight: 600;
+font-size:0.7em;
+text-align: left;
+color: #068d3f;
+font-weight: 500;
+}
+
