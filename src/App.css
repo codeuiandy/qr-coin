@@ -340,6 +340,7 @@ cursor: pointer;
 }
 .tr-amount655 h1{
   font-size: 1.1em;
+  font-weight: 400;
 }
 
 
@@ -354,5 +355,53 @@ font-size:0.7em;
 text-align: left;
 color: #068d3f;
 font-weight: 500;
+}
+.digitalMoneyBarcode{
+  width: 216px;
+height: 216px;
+background: rgba(10, 21, 49, 0.06);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.digitalMoneyUsefulLink{
+  width: 90%;
+height: 56px;
+border-radius: 16px;
+background: transparent;
+border: 1px solid #dadce0;
+display: flex;
+margin-top: 15px;
+overflow: hidden;
+margin-bottom: 15px;
+}
+
+.digitalMoneyUsefulLink input{
+  width: 70%;
+  height: 100%;
+  border: none;
+  border-right: 1px solid #dadce0;
+  padding-left: 10px;
+}
+
+.digitalMoneyUsefulLink-img{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+padding: 0 5px 0 10px;
+}
+
+
+
+.digitalMoneyUsefulLink .digitalMoneyUsefulLink-img img{
+  width: 45%;
+    height: 44%;
+    background-size: contain;
+    cursor: pointer;
+    
 }
 
