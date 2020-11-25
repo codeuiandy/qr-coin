@@ -9,98 +9,99 @@ import logo from '../../Assets/logo.png'
 export default function Sidebar(props) {
     const [activeRoute, SetActiveRoute] = useState("naira")
     let CurrentRoute = props.CurrentRoute
+    console.log(props)
     return (
         <div className="sidebar-wrap">
             
             <ul className="sidebar-list">
                 <li className="sidebarLogo"><img src={logo} alt=""/></li>
 
-             <li onClick={()=>SetActiveRoute("naira")} className={CurrentRoute==="/qr_coin_naira"?"active-sidebar-route" : ""}> 
+             <li onClick={()=>props.BrowserRoter(`/q_coin_naira`)} className={CurrentRoute==="/q_coin_naira"?"active-sidebar-route" : ""}> 
                 <div className="sidebar-chf5">
                          <img src={icon1} className="sidebar-i" />  
 
                    <span className="sidebar-link">
                        <span className="routeName">Naira</span>
-                    {CurrentRoute==="/qr_coin_naira"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
+                    {CurrentRoute==="/q_coin_naira"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
                     </span>  
                     </div>
 
-                    {CurrentRoute==="/qr_coin_naira"?<div className="active-dot-sidebar"></div> :""}
+                    {CurrentRoute==="/q_coin_naira"?<div className="active-dot-sidebar"></div> :""}
         
               </li>
 
-              <li onClick={()=>SetActiveRoute("BitCoin")} className={activeRoute==="BitCoin"?"active-sidebar-route" : ""}> 
+              <li onClick={()=>props.BrowserRoter(`/q_coin_bitcoin`)} className={CurrentRoute==="/q_coin_bitcoin"?"active-sidebar-route" : ""}> 
                 <div className="sidebar-chf5">
                          <img src={icon2} className="sidebar-i" />  
 
                    <span className="sidebar-link">
                        <span className="routeName">Bitcoin</span>
-                    {activeRoute==="BitCoin"?<span className="sidbar-link-total">10000 <span>BTC</span></span> :""}
+                    {CurrentRoute==="/q_coin_bitcoin"?<span className="sidbar-link-total">10000 <span>BTC</span></span> :""}
                     </span>  
                     </div>
 
-                    {activeRoute==="BitCoin"?<div className="active-dot-sidebar"></div> :""}
+                    {CurrentRoute==="/q_coin_bitcoin"?<div className="active-dot-sidebar"></div> :""}
         
               </li>
 
 
-              <li onClick={()=>SetActiveRoute("Etheretum")} className={activeRoute==="Etheretum"?"active-sidebar-route" : ""}> 
+              <li onClick={()=>props.BrowserRoter("/q_coin_etheretum")} className={CurrentRoute==="/q_coin_etheretum"?"active-sidebar-route" : ""}> 
                 <div className="sidebar-chf5">
                          <img src={icon3} className="sidebar-i" />  
 
                    <span className="sidebar-link">
                        <span className="routeName">Etheretum</span>
-                    {activeRoute==="Etheretum"?<span className="sidbar-link-total">10000 <span>ETH</span></span> :""}
+                    {CurrentRoute==="/q_coin_etheretum"?<span className="sidbar-link-total">10000 <span>ETH</span></span> :""}
                     </span>  
                     </div>
 
-                    {activeRoute==="Etheretum"?<div className="active-dot-sidebar"></div> :""}
+                    {CurrentRoute==="/q_coin_etheretum"?<div className="active-dot-sidebar"></div> :""}
         
               </li>
 
 
-              <li onClick={()=>SetActiveRoute("tether")} className={activeRoute==="tether"?"active-sidebar-route" : ""}> 
+              <li onClick={()=>props.BrowserRoter("/q_coin_tether")} className={CurrentRoute==="/q_coin_tether"?"active-sidebar-route" : ""}> 
                 <div className="sidebar-chf5">
                          <img src={icon4} className="sidebar-i" />  
 
                    <span className="sidebar-link">
                        <span className="routeName">Tether</span>
-                    {activeRoute==="tether"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
+                    {CurrentRoute==="/q_coin_tether"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
                     </span>  
                     </div>
 
-                    {activeRoute==="tether"?<div className="active-dot-sidebar"></div> :""}
+                    {CurrentRoute==="/q_coin_tether"?<div className="active-dot-sidebar"></div> :""}
         
               </li>
 
 
-              <li onClick={()=>SetActiveRoute("ripple")} className={activeRoute==="ripple"?"active-sidebar-route" : ""}> 
+              <li onClick={()=>props.BrowserRoter("/q_coin_ripple")} className={CurrentRoute==="/q_coin_ripple"?"active-sidebar-route" : ""}> 
                 <div className="sidebar-chf5">
                          <img src={icon5} className="sidebar-i" />  
 
                    <span className="sidebar-link">
                        <span className="routeName">Ripple</span>
-                    {activeRoute==="ripple"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
+                    {CurrentRoute==="/q_coin_ripple"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
                     </span>  
                     </div>
 
-                    {activeRoute==="ripple"?<div className="active-dot-sidebar"></div> :""}
+                    {CurrentRoute==="/q_coin_ripple"?<div className="active-dot-sidebar"></div> :""}
         
               </li>
 
 
 
-              <li onClick={()=>SetActiveRoute("Dash")} className={activeRoute==="Dash"?"active-sidebar-route" : ""}> 
+              <li onClick={()=>props.BrowserRoter("/q_coin_dash")} className={CurrentRoute==="/q_coin_dash"?"active-sidebar-route" : ""}> 
                 <div className="sidebar-chf5">
                          <img src={icon6} className="sidebar-i" />  
 
                    <span className="sidebar-link">
                        <span className="routeName">Dash</span>
-                    {activeRoute==="Dash"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
+                    {CurrentRoute==="/q_coin_dash"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
                     </span>  
                     </div>
 
-                    {activeRoute==="Dash"?<div className="active-dot-sidebar"></div> :""}
+                    {CurrentRoute==="/q_coin_dash"?<div className="active-dot-sidebar"></div> :""}
         
               </li>
 
