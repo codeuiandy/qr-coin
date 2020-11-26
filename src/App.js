@@ -19,7 +19,7 @@ class App extends Component {
 				<Router>
 					<Switch>
 						<Route exact="/" path="/" component={Index} />
-						<Route exact path="/sign_up" component={Signup} />
+						<Route exact path="/signup" component={Signup} />
 						<Route exact path="/login" component={Login} />
 						<Route exact="/q_coin_naira" path="/q_coin_naira" component={QRNaira} />
 						<Route exact="/q_coin_bitcoin" path="/q_coin_bitcoin" component={QBitcoin} />

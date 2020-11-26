@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -9,37 +9,16 @@ export default function Navbar() {
 
   const history = useHistory();
   const [showMenu, setShowMenu] = useState(false);
-  const [button, setButton] = useState(true)
-
-  const clickedMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  }
-
-  useEffect(() => {
-    showButton()
-    return () => {
-      //
-    }
-  }, []);
-
-  window.addEventListener("resize", showButton);
+  const clickedMenu = () => setShowMenu(!showMenu);
 
   return (
     <div className="home-nav">
 
-      <Link to="/" className="logo-home-wrap">
+      <div className="logo-home-wrap">
         <img src={Logo} alt="" />
-      </Link>
+      </div>
 
-      {(showMenu || button) && <div className="home-nav-ceter-links navtest">
+      <div className="home-nav-ceter-links">
         <ul>
 
           <li className="dropdown">
@@ -78,17 +57,17 @@ export default function Navbar() {
             </div>
           </li>
         </ul>
-      </div>}
+      </div>
 
-      {(showMenu || button) && <div className="access-home">
+      <div className="access-home">
         <button onClick={() => history.push("/login")}>Sign in</button>
-        <button onClick={() => history.push("/sign_up")}>Create Account</button>
-      </div>}
+        <button onClick={() => history.push("/signup")}>Create Account</button>
+      </div>
 
 
       <div className="mobile-icon">
-        {showMenu ? <FontAwesomeIcon onClick={() => clickedMenu()} icon={faTimes} size="2x" color="#fff" /> :
-          <FontAwesomeIcon onClick={() => clickedMenu()} icon={faBars} size="2x" color="#fff" />}
+        {!showMenu && <FontAwesomeIcon onClick={() => clickedMenu()} icon={faBars} size="2x" color="#fff" />}
+        {showMenu && <FontAwesomeIcon onClick={() => clickedMenu()} icon={faTimes} size="2x" color="#fff" />}
       </div>
     </div>
   )
