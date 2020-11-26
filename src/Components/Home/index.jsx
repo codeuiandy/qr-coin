@@ -15,6 +15,11 @@ export default function Index() {
 
                     <About />
 
+                    <h1 className="k68s utl87">User Friendly, Made Specially For 
+                    <br/>       
+                    You!
+</h1>
+
                 </div>
             </div>
             

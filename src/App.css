@@ -593,15 +593,20 @@ font-size: 22px;
     background-color: #FFFFFF;
     width: 100%;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .about-QCOIN-home .k68s{
    text-align: center;
 font-weight: normal;
-font-size: 40px;
+font-size: 35px;
 color: #193367;
+margin-bottom: 45px;
+  }
 
+  .about-QCOIN-home .utl87{
+    font-size: 30px ;
+    margin-top: 110px;
   }
 
   .fancy-circle-img-home{
@@ -614,3 +619,35 @@ color: #193367;
     position: absolute;
     
   }
+
+  .about-grid-sec-home{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    height: 300px;
+  }
+
+  .about-grid-sec-home .about-grid-col1{
+   width: 50%;
+  }
+
+  .about-grid-sec-home .about-grid-col2{
+    width: 40%;
+   height: 100%;
+   }
+
+   .about-grid-sec-home .about-grid-col2 img{
+  width: 80%;
+    height: 100%;
+   }
+
+   .about-grid-col1 h1{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: left;
+    color: #193367;
+    margin-bottom: 20px;
+   }
