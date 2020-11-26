@@ -1,8 +1,8 @@
 import React from 'react'
 import fancyImg from '../../Assets/img1.png'
-import img2 from '../../Assets/img2.png'
-import img3 from '../../Assets/img3.png'
-import img4 from '../../Assets/img4.png'
+import img2 from '../../Assets/img2.svg'
+import img3 from '../../Assets/img3.svg'
+import img4 from '../../Assets/img4.svg'
 export default function AboutSection() {
     return (
         <div>

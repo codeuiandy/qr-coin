@@ -165,7 +165,7 @@
 }
 
 .deposit-option-header p{
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 5px;
   margin-bottom: 20px;
 }
@@ -221,7 +221,7 @@ padding-right: 10px;
   margin-right: -1px;
   /* padding-top: 10px; */
   position: relative;
-  top: 4px;
+  top: -2px;
 }
 
 .withdraw-info p{
@@ -350,9 +350,9 @@ cursor: pointer;
   opacity: 0.5;
 }
 
-.tr-amount{
+.tr-amount h1{ 
 font-weight: 600;
-font-size:0.7em;
+font-size:1.2em;
 text-align: left;
 color: #068d3f;
 font-weight: 500;
@@ -385,6 +385,7 @@ margin-bottom: 15px;
   border: none;
   border-right: 1px solid #dadce0;
   padding-left: 10px;
+  font-size: 12px;
 }
 
 .digitalMoneyUsefulLink-img{
@@ -616,7 +617,7 @@ color: #484848;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .submit-home button{
     width: 85%;
