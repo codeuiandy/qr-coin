@@ -7,7 +7,7 @@ import Etheretum from './Components/Etheretum/index'
 import Dash from './Components/Dash/index'
 import Ripple from './Components/Ripple/index'
 import Tether from './Components/Tether/index'
-
+import Index from './Components/Home/index'
 import './App.css'
 class App extends Component {
 	render() {
@@ -16,7 +16,7 @@ class App extends Component {
 
 			<Router>
 				<Switch>
-					<Route exact="/" path="/" component={QRNaira}/>
+					<Route exact="/" path="/" component={Index}/>
                    <Route exact="/q_coin_naira" path="/q_coin_naira" component={QRNaira}/>
 				   <Route exact="/q_coin_bitcoin" path="/q_coin_bitcoin" component={QBitcoin}/>
 				   <Route exact="/q_coin_etheretum" path="/q_coin_etheretum" component={Etheretum}/>
