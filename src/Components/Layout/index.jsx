@@ -11,34 +11,7 @@ export default function Index(props) {
       
     }, [Hidenav])
 
-    function doSomething(scroll_pos) {
-      
-        let action = 15.199999809265137;
-         console.log(scroll_pos)
-        // if (action >= scroll_pos) {
-        //     setHideNav(true)
-        // }
-
-        // if (action <= scroll_pos) {
-        //     setHideNav(false)
-        // }
-    //    else{
-    //     setHideNav(false)
-    //    }
-      }
-      
-      window.addEventListener('scroll', function(e) {
-        setLastScrool(window.scrollY)
-      
-        if (!ticking) {
-          window.requestAnimationFrame(function() {
-            doSomething(LastScrool);
-            setticking(false);
-          });
-      
-          setticking(false);
-        }
-      });
+   
 
     return (
         <React.Fragment>
