@@ -39,7 +39,7 @@ export default function Navbar() {
         <img src={Logo} alt="" />
       </Link>
 
-      {(showMenu || button) && <div className="home-nav-ceter-links navtest">
+      {(showMenu || button) && <div className="home-nav-ceter-links">
         <ul>
 
           <li className="dropdown">
