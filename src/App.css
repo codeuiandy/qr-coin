@@ -471,7 +471,7 @@ justify-content: space-between;
     .access-home{
       flex-direction: column;
       width: 40%;
-      height: 100%;
+      height: fit-content;
       padding-top: 15px;
       position: absolute;
       top: 340px;
