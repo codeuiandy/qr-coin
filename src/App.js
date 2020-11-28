@@ -11,6 +11,7 @@ import Index from './Components/Home/index'
 import './App.css'
 import Signup from "./Components/UserAccess/Signup";
 import Login from "./Components/UserAccess/Login";
+import MyAccount from "./Components/Account/MyAccount";
 class App extends Component {
 	render() {
 		return (
@@ -27,6 +28,7 @@ class App extends Component {
 						<Route exact="/q_coin_dash" path="/q_coin_dash" component={Dash} />
 						<Route exact="/q_coin_ripple" path="/q_coin_ripple" component={Ripple} />
 						<Route exact="/q_coin_tether" path="/q_coin_tether" component={Tether} />
+						<Route exact path="/my_account" component={MyAccount} />
 						<Route path="*" component={NotFound} />
 					</Switch>
 				</Router>

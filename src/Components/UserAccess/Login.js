@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from '../Home/Navbar';
@@ -7,6 +7,7 @@ import image from '../../Assets/Group 53.png';
 
 // style in index.css
 function Login() {
+    const history = useHistory()
     return (
         <div className="sigup-page">
             <div className="nav-container">
@@ -14,10 +15,10 @@ function Login() {
             </div>
             <div className="main-content-body">
                 <div className="container-box">
-                    <img src={image} alt="Signup image" className="lock-imgage" />
+                    <img src={image} alt="Signup lock" className="lock-imgage" />
                     <div className="title-text">Sign In</div>
                     <div className="form-container">
-                        <form className="form-main" onSubmit={() => { }}>
+                        <form className="form-main" onSubmit={() => history.push("/")}>
                             <input placeholder="Username" onChange={() => { }} className="input" />
                             <div className="password-wrapper">
                                 <input placeholder="Password" onChange={() => { }} className="password" />
