@@ -13,7 +13,7 @@ function Login() {
             <div className="nav-container">
                 <Navbar />
             </div>
-            <div className="main-content-body">
+            <div className="main-content-body-wrap">
                 <div className="container-box">
                     <img src={image} alt="Signup lock" className="lock-imgage" />
                     <div className="title-text">Sign In</div>

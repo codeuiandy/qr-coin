@@ -22,7 +22,13 @@ export default function Index() {
 </h1>
 
                 </div>
+
+               
+
                 </div>
+                <div className="footer-image-sec">
+
+</div>
 
                 
             
