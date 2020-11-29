@@ -10,16 +10,17 @@ import usernameImg from '../../Assets/Group 12819.png';
 import passwoordLockImg from '../../Assets/015---Locked-Payment.png';
 import countryImg from '../../Assets/Path 62343.png';
 import { useHistory } from 'react-router-dom';
+import Layout from '../Layout/index'
 
-function MyAccount() {
-
+function MyAccount(props) {
+    let BrowserRoter = props.history.push
+    let CurrentRoute = props.location.pathname
     const history = useHistory()
 
     return (
+        <Layout CurrentRoute={CurrentRoute} BrowserRoter={BrowserRoter} >
         <div className="accouts-1">
-            <div className="nav-container">
-                <Navbar />
-            </div>
+
             <div className="main-content-body">
                 <div className="account-container-box">
                     <div className="inner-container-box">
@@ -201,6 +202,7 @@ function MyAccount() {
                 </div>
             </div>
         </div>
+        </Layout>
     )
 }
 

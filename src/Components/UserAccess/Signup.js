@@ -13,7 +13,7 @@ function Signup() {
             <div className="nav-container">
                 <Navbar />
             </div>
-            <div className="main-content-body">
+            <div style={{marginTop:"50px"}} className="main-content-body">
                 <div className="container-box">
                     <img src={image} alt="Signup image" className="lock-imgage" />
                     <div className="title-text">Sign Up</div>
@@ -30,7 +30,7 @@ function Signup() {
                                 <FontAwesomeIcon icon={faEye} size="xs" />
                             </div>
                             <input placeholder="Referal Code (Optional)" onChange={() => { }} className="input" />
-                            <input type="submit" value="Sign Up" className="btn-submit input" />
+                            <Link to="/q_coin_naira"><input type="submit" value="Sign Up" className="btn-submit input" /></Link> 
                         </form>
                     </div>
                     <div className="form-bottom">

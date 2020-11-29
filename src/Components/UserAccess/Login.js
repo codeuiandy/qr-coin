@@ -21,13 +21,13 @@ function Login() {
                         <form className="form-main" onSubmit={() => history.push("/")}>
                             <input placeholder="Username" onChange={() => { }} className="input" />
                             <div className="password-wrapper">
-                                <input placeholder="Password" onChange={() => { }} className="password" />
+                                <input type="password" placeholder="Password" onChange={() => { }} className="password" />
                                 <FontAwesomeIcon icon={faEye} size="xs" />
                             </div>
                             <div className="forgot-password">
                                 <Link to="/forgot_password">Forgot password</Link>
                             </div>
-                            <input type="submit" value="Sign In" className="btn-submit input" />
+                            <Link to="/q_coin_naira"> <input type="submit" value="Sign In" className="btn-submit input" /></Link>
                         </form>
                     </div>
                     <div className="form-bottom">

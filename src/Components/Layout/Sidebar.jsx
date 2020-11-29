@@ -105,6 +105,20 @@ export default function Sidebar(props) {
         
               </li>
 
+              <li onClick={()=>props.BrowserRoter("/my_account")} className={CurrentRoute==="/my_account"?"active-sidebar-route" : ""}> 
+                <div className="sidebar-chf5">
+                         <img src={icon6} className="sidebar-i" />  
+
+                   <span className="sidebar-link">
+                       <span className="routeName">Account</span>
+                  
+                    </span>  
+                    </div>
+
+                    {CurrentRoute==="/my_account"?<div className="active-dot-sidebar"></div> :""}
+        
+              </li>
+
             </ul>
         </div>
     )

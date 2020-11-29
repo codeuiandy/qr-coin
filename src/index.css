@@ -11,6 +11,9 @@ body {
   position: relative;
   
 }
+html{
+  background-color: #F1F1F3;
+}
 
 @font-face {
   font-family: AppFont;
@@ -51,39 +54,33 @@ button,input,select{
   --bg-color:#f1f1f3;
   --box-color: #fff;
   --text-color: #2e2e2e;
-  --btn-color: #119759;
-  --link-color: #ffb500;
-  --input-border: #afacac;
+  --btn-color: #48c448;
+  --link-color:  #ffb500;
+
 }
+
+
 
 .nav-container {
   background-color: #0A1531;
   padding: 0 70px 0 70px;
 }
-.main-content-body {
-  display: flex;
-  background-image: url(./Assets/Mask\ Group\ 22.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 100px;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-color);
-}
+
 .container-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 90%;
   max-width: 650px;
   min-width: 300px;
   margin: 20px 0 50px 0;
   padding: 40px 0;
   border-radius: 10px;
   background-color: var(--box-color);
+}
+.sigup-page{
+  background-color: #F1F1F3;
 }
 .lock-imgage {
   height: 70px;
@@ -98,6 +95,7 @@ button,input,select{
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 30px;
 }
 .form-main {
   display: flex;
@@ -112,7 +110,7 @@ button,input,select{
   padding: 0 20px;
   border-radius: 5px;
   border-width: 1px;
-  border-color: var(--input-border);
+  border: 1px solid rgba(10, 21, 49, 0.21);
 }
 .password-wrapper {
   display: flex;
@@ -122,7 +120,7 @@ button,input,select{
   height: 3.5rem;
   border-radius: 5px;
   border: 1px solid;
-  border-color: var(--input-border);
+  border: 1px solid rgba(10, 21, 49, 0.21);
 }
 .password {
   width: 90% !important;
@@ -135,7 +133,7 @@ button,input,select{
   margin-top: 30px !important;
   color: #fff;
   background-color: var(--btn-color);
-  border-color: var(--btn-color);
+  border:none;
 }
 .form-bottom {
   display: flex;
@@ -159,3 +157,4 @@ button,input,select{
   font-size: 12px;
   color: var(--link-color);
 }
+

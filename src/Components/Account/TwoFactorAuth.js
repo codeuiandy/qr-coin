@@ -5,14 +5,15 @@ import Navbar from '../Layout/Navbar';
 import "./account.css";
 import barCode from '../../Assets/barCode.png';
 import refresh from '../../Assets/refresh.png';
+import Layout from '../Layout/index'
 
-
-export const TwoFactorAuth = () => {
+export const TwoFactorAuth = (props) => {
+    let BrowserRoter = props.history.push
+    let CurrentRoute = props.location.pathname
     return (
+        <Layout CurrentRoute={CurrentRoute} BrowserRoter={BrowserRoter} >
         <div className="accouts-1">
-            <div className="nav-container">
-                <Navbar />
-            </div>
+           
             <div className="main-content-body">
                 <div className="account-container-box">
                     <div className="inner-container-box-2">
@@ -69,5 +70,6 @@ export const TwoFactorAuth = () => {
                 </div>
             </div>
         </div >
+        </Layout>
     )
 }
