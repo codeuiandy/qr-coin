@@ -119,3 +119,122 @@ p {
         border-color: transparent;
     }
 }
+
+/* 2FA */
+.inner-container-box-2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    max-width: 750px;
+    min-width: 300px;
+    margin: 40px 0px;
+    padding: 40px;
+    justify-content: center;
+    border: 1px solid #ecedef;
+    border-radius: 10px;
+}
+.account-title-top {
+    margin-bottom: 40px;
+}
+.account-title-top h5 {
+    margin-bottom: 20px;
+}
+.setup-body h6 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.setup-body p {
+    margin-left: 10px;
+}
+.items-steps {
+    margin-bottom: 40px;
+}
+.icon-marketplace {
+    margin-top: 4px;
+}
+.icon-marketplace span {
+    font-size: 12px;
+    align-items: center;
+    margin: 0 15px 0 5px;
+    color: #a3a7b1;
+}
+.img-image {
+    margin-top: 10px;
+    padding: 10px;
+    width: fit-content;
+    background-color: #f1f1f3;
+}
+.img-image img {
+    height: 120px;
+}
+.token-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px #e4e4f3 solid;
+}
+.token-wrapper input {
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.token-wrapper div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px #e4e4f3 solid;
+    height: 100%;
+}
+.refresh {
+    background-color: #fff;
+    height: 100%;
+    border: 1px #e4e4f3 solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.refresh img {
+    width: 60%;
+}
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 20px 0;
+}
+.auth-form label {
+    font-size: 00.8rem;
+}
+.auth-input {
+    width: 90%;
+    height: 50px;
+    border: 1px #e4e4f3 solid;
+    border-radius: 10px;
+}
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+.cancel-btn, .submit-2fa {
+    display: flex;
+    padding: 15px 25px;
+    margin: 10px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 1px #e4e4f3 solid;
+    border-radius: 8px;
+}
+.cancel-btn:hover {
+    cursor: pointer;
+}
+.submit-2fa {
+    color: #fff;
+    background-color: #0d1c3e;
+}
