@@ -27,7 +27,7 @@ export const ChangePassword = () => {
                                     <label htmlFor="confirmpassword">Confirm Password*</label>
                                     <input type="text" name="confirmpassword" className="body-form-input" placeholder="Confirm your password" />
                                     <div className="btn-wrapper">
-                                        <div className="cancel-back-btn" onClick={() => history.goBack()}>Back</div>
+                                        <div className="cancel-back-btn" onClick={() => history.goBack()}>BACK</div>
                                         <input type="submit" value="Change password" className="submit-form-2-btn" />
                                     </div>
                                 </form>
