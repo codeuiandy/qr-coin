@@ -201,17 +201,20 @@ p {
 .refresh img {
     width: 60%;
 }
-.auth-form {
+.body-form {
     display: flex;
     flex-direction: column;
     margin: 40px 0 20px 0;
 }
-.auth-form label {
+.body-form label {
     font-size: 00.8rem;
 }
-.auth-input {
+.body-form-input {
     width: 90%;
     height: 50px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    font-size: 0.7rem;
     border: 1px #e4e4f3 solid;
     border-radius: 10px;
 }
@@ -221,7 +224,7 @@ p {
     justify-content: space-around;
     margin: 30px;
 }
-.cancel-btn, .submit-2fa {
+.cancel-back-btn, .submit-form-2-btn {
     display: flex;
     padding: 15px 25px;
     margin: 10px;
@@ -231,10 +234,10 @@ p {
     border: 1px #e4e4f3 solid;
     border-radius: 8px;
 }
-.cancel-btn:hover {
+.cancel-back-btn:hover {
     cursor: pointer;
 }
-.submit-2fa {
+.submit-form-2-btn {
     color: #fff;
     background-color: #0d1c3e;
 }
