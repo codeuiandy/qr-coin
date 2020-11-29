@@ -417,6 +417,10 @@ padding: 0 5px 0 10px;
   background-color: #0A1531;
   padding: 0 70px 0 70px;
 }
+
+.app-home-page-wrap{
+  padding: 0 70px 0 70px;
+}
 .home-nav{
   display: flex;
   justify-content: space-between;
@@ -700,3 +704,129 @@ margin-bottom: 45px;
     color: #193367;
     margin-bottom: 20px;
    }
+
+
+
+   /* RESPONSIVE DESIGN */
+   @media(max-width:954px){
+    .hero-section {
+      height: 1100px;
+      padding:10px;
+  }
+  .mobile-icon{
+    margin-right: 15px;
+  }
+
+  .fancy-circle-img-home{
+    display: none;
+  }
+
+  .hero-col-one h1 {
+    font-size: 45px;
+    line-height: 59px;
+}
+  
+     .hero-text {
+      display: flex;
+      height: 80vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      flex-direction: column;
+  }
+  
+  .hero-col-one {
+    width: 90%;
+    margin-top: 120px;
+  }
+  
+  
+  .hero-col-two {
+    width: 90%;
+    height: 90%;
+    margin-top: 30px;
+  }
+   }
+
+   @media(max-width:640px){
+   .about-grid-sec-home {
+    flex-direction: column-reverse;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.reverse-grid-responsive1 {
+  flex-direction: column-reverse;
+}
+
+.reverse-grid-responsive2 {
+  flex-direction: column;
+}
+
+.about-grid-sec-home .about-grid-col2 img {
+ display: none;
+
+}
+
+.about-grid-sec-home .responsive-img1 {
+
+  background-image: url(./Assets/img22.png);
+  width: 90%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+ }
+
+ .about-grid-sec-home .responsive-img2 {
+
+  background-image: url(./Assets/img33.png);
+  width: 90%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+ }
+
+ .about-grid-sec-home .responsive-img3 {
+
+  background-image: url(./Assets/img44.png);
+  width: 90%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+ }
+
+ .app-home-page-wrap {
+  padding: 10px;
+}
+
+.about-QCOIN-home .utl87 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+
+
+.about-grid-sec-home .about-grid-col1 {
+  width: 90%;
+  margin-top: 30px;
+    margin-bottom: 45px;
+}
+   }
+
+   @media(max-width:500px){
+   .hero-col-one h1 {
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 53px;
+    text-align: left;
+    color: #fff;
+    margin-top: 0;
+}
+}

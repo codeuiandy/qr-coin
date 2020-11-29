@@ -9,8 +9,9 @@ export default function Index() {
             <div className="hero-section">
                 <Navbar/>
                 <HeroSection/>
-
-                <div className="about-QCOIN-home">
+                </div>
+                <div className="app-home-page-wrap">
+                    <div className="about-QCOIN-home">
                     <h1 className="k68s">WHY <span> QCOIN?</span></h1>
 
                     <About />
@@ -21,7 +22,10 @@ export default function Index() {
 </h1>
 
                 </div>
-            </div>
+                </div>
+
+                
+            
             
         </React.Fragment>
     )

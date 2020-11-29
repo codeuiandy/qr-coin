@@ -9,7 +9,7 @@ export default function AboutSection() {
 
            
 
-            <div className="about-grid-sec-home">
+            <div className="about-grid-sec-home reverse-grid-responsive1">
 
                 <div className="about-grid-col1">
                     <h1>Open An Account In Less Than 
@@ -22,7 +22,7 @@ export default function AboutSection() {
 
                 </div>
 
-                <div className="about-grid-col2">
+                <div className="about-grid-col2 responsive-img1">
                     <img src={img2} alt=""/>
                 </div>
 
@@ -34,10 +34,10 @@ export default function AboutSection() {
 
             
 
-            <div className="about-grid-sec-home">
+            <div className="about-grid-sec-home reverse-grid-responsive2">
 
 
-                <div className="about-grid-col2">
+                <div className="about-grid-col2 responsive-img2">
                     <img src={img3} alt=""/>
                 </div>
 
@@ -61,7 +61,7 @@ cryptocurrency cool again!</p>
 
 
 
-                        <div className="about-grid-sec-home">
+                        <div className="about-grid-sec-home reverse-grid-responsive3">
 
             <div className="about-grid-col1">
                 <h1>Instant Exchange/ Payouts To 
@@ -74,7 +74,7 @@ cryptocurrency cool again!</p>
 
             </div>
 
-            <div className="about-grid-col2">
+            <div className="about-grid-col2 responsive-img3">
                 <img src={img4} alt=""/>
             </div>
 
