@@ -9,8 +9,11 @@ import phoneLockImg from '../../Assets/Path 62352.png';
 import usernameImg from '../../Assets/Group 12819.png';
 import passwoordLockImg from '../../Assets/015---Locked-Payment.png';
 import countryImg from '../../Assets/Path 62343.png';
+import { useHistory } from 'react-router-dom';
 
 function MyAccount() {
+
+    const history = useHistory()
 
     return (
         <div className="accouts-1">
@@ -112,7 +115,7 @@ function MyAccount() {
                                     </div>
                                     <div className="item-lower-content item-right">
                                         <div className="lower-left btn-btn">
-                                            <button className="account-btn">Enable 2FA</button>
+                                            <button onClick={() => history.push("/two_factor_auth")} className="account-btn">Enable 2FA</button>
                                         </div>
                                     </div>
                                 </div>
