@@ -154,7 +154,7 @@ function MyAccount(props) {
                                     </div>
                                     <div className="item-lower-content item-right">
                                         <div className="lower-left btn-btn">
-                                            <button className="account-btn">Change password</button>
+                                            <button onClick={() => history.push("/change_password")} className="account-btn">Change password</button>
                                         </div>
                                     </div>
                                 </div>

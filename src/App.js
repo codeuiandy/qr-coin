@@ -13,6 +13,7 @@ import Signup from "./Components/UserAccess/Signup";
 import Login from "./Components/UserAccess/Login";
 import MyAccount from "./Components/Account/MyAccount";
 import { TwoFactorAuth } from "./Components/Account/TwoFactorAuth";
+import { ChangePassword } from "./Components/Account/ChangePassword";
 class App extends Component {
 	render() {
 		return (
@@ -31,6 +32,7 @@ class App extends Component {
 						<Route exact="/q_coin_tether" path="/q_coin_tether" component={Tether} />
 						<Route exact path="/my_account" component={MyAccount} />
 						<Route exact path="/two_factor_auth" component={TwoFactorAuth} />
+						<Route exact path="/change_password" component={ChangePassword} />
 						<Route path="*" component={NotFound} />
 					</Switch>
 				</Router>

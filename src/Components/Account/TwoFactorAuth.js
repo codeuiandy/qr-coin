@@ -54,12 +54,12 @@ export const TwoFactorAuth = (props) => {
                                     <h6>Step 3: Verify and Enable 2FA</h6>
                                     <p>Fill in the unique code displayed on the Google Authenticaor App on your phone to enable the Two Factor Authentication.</p>
                                     <div className="form-single-container">
-                                        <form onSubmit={() => { }} className="auth-form">
+                                        <form onSubmit={() => { }} className="body-form">
                                             <label htmlFor="auth-code">Authentication Code*</label>
-                                            <input type="text" name="auth-code" className="auth-input" />
+                                            <input type="text" name="auth-code" className="body-form-input" />
                                             <div className="btn-wrapper">
-                                                <div className="cancel-btn" onClick={() => { }}>Cancel</div>
-                                                <input type="submit" value="Enable 2FA" className="submit-2fa" />
+                                                <div className="cancel-back-btn" onClick={() => { }}>Cancel</div>
+                                                <input type="submit" value="Enable 2FA" className="submit-form-2-btn" />
                                             </div>
                                         </form>
                                     </div>
