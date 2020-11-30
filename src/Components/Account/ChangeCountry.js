@@ -4,7 +4,7 @@ import "./account.css";
 import Layout from '../Layout/index'
 
 
-export const ChangePassword = (props) => {
+export const ChangeCountry = (props) => {
     let BrowserRoter = props.history.push
     let CurrentRoute = props.location.pathname
     const history = useHistory();
@@ -17,19 +17,20 @@ export const ChangePassword = (props) => {
                         <div className="inner-container-box-2">
                             <div>
                                 <div className="account-title-top">
-                                    <h5>Change Your Password</h5>
+                                    <h5>Change your Country</h5>
+                                    <p>Please, note that the country you select determines which local currency wallet you can operate with your quidax account as well as the verification document you might asked to provide.</p>
                                 </div>
                                 <div className="setup-body">
                                     <form onSubmit={() => { }} className="body-form">
-                                        <label htmlFor="oldpassword">Old Password</label>
-                                        <input type="text" name="oldpassword" className="body-form-input" />
-                                        <label htmlFor="password">Password*</label>
-                                        <input type="text" name="password" className="body-form-input" placeholder="Please set your account password" />
-                                        <label htmlFor="confirmpassword">Confirm Password*</label>
-                                        <input type="text" name="confirmpassword" className="body-form-input" placeholder="Confirm your password" />
+                                        <label htmlFor="country">Country</label>
+                                        <div className="body-form-input">
+                                            <select name="" id="">
+                                                <option value="Nigeris">Nigeria</option>
+                                                <option value="Ghana">Ghana</option>
+                                            </select>
+                                        </div>
                                         <div className="btn-wrapper">
-                                            <div className="cancel-back-btn" onClick={() => history.goBack()}>BACK</div>
-                                            <input type="submit" value="Change password" className="submit-form-2-btn" />
+                                            <button className="submit-form-2-btn">Change Country</button>
                                         </div>
                                     </form>
                                 </div>

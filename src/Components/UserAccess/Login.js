@@ -32,7 +32,7 @@ function Login() {
                     </div>
                     <div className="form-bottom">
                         <div>Don't have an account</div>
-                        <Link to="/signup">Sign Up</Link>
+                        <Link to="/sign_up">Sign Up</Link>
                     </div>
                 </div>
             </div>
