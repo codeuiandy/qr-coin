@@ -14,6 +14,10 @@ import Login from "./Components/UserAccess/Login";
 import MyAccount from "./Components/Account/MyAccount";
 import { TwoFactorAuth } from "./Components/Account/TwoFactorAuth";
 import { ChangePassword } from "./Components/Account/ChangePassword";
+import { LevelOneAccountInfo } from "./Components/Account/LevelOneAccountInfo";
+import { ChangeCountry } from "./Components/Account/ChangeCountry";
+import { ChangeUsername } from "./Components/Account/ChangeUsername";
+import { DeveloperSettings } from "./Components/Account/DeveloperSettings";
 class App extends Component {
 	render() {
 		return (
@@ -33,6 +37,10 @@ class App extends Component {
 						<Route exact path="/my_account" component={MyAccount} />
 						<Route exact path="/two_factor_auth" component={TwoFactorAuth} />
 						<Route exact path="/change_password" component={ChangePassword} />
+						<Route exact path="/change_username" component={ChangeUsername} />
+						<Route exact path="/level_1_account_info" component={LevelOneAccountInfo} />
+						<Route exact path="/change_country" component={ChangeCountry} />
+						<Route exact path="/developer_settings" component={DeveloperSettings} />
 						<Route path="*" component={NotFound} />
 					</Switch>
 				</Router>
