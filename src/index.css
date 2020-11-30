@@ -39,7 +39,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 p{
 color: #0a1531;
-opacity: 0.52;
+opacity: 0.88;
 
 }
 
@@ -163,13 +163,15 @@ button,input,select{
 }
 
 .main-content-body-wrap{
-  background-image: url(./Assets/mask.png);
+  background-image: url(./Assets/body.jpeg);
   width: 100vw;
   height: 100vh;
   background-position: center;
-  background-image: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-color: #E8E9EB;
   
 }

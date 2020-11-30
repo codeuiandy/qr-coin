@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Logo from '../../Assets/logo.png'
+import Logo from '../../Assets/logo-white.svg'
 
 export default function Navbar() {
 
@@ -36,7 +36,9 @@ export default function Navbar() {
     <div className="home-nav">
 
       <Link to="/" className="logo-home-wrap">
-        <img src={Logo} alt="" />
+        <img style={{transform:"scale(0.7)",    position:" relative",
+    top: "-13px"
+}} src={Logo} alt="" />
       </Link>
 
       {(showMenu || button) && <div className="home-nav-ceter-links">
