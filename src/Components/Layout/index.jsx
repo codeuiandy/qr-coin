@@ -17,7 +17,7 @@ export default function Index(props) {
         <React.Fragment>
   <div >
                   <div id="hideNav">
-                       <Navbar/>
+                       <Navbar BrowserRoter={props.BrowserRoter}/>
                   </div>
                   
                   

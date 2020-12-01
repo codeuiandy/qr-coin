@@ -18,13 +18,13 @@ p {
 .inner-container-box {
     display: flex;
     flex-direction: column;
-    width: 92%;
+    width: 100%;
     height: 100%;
-    margin: 10px 0px;
-    padding: 40px;
+    /* margin: 40px 0px; */
+    padding-top: 20px;
     justify-content: center;
-    border: 1px solid #ecedef;
-    border-radius: 10px;
+    /* border: 1px solid #ecedef; */
+    /* border-radius: 8px; */
 }
 .account-header {
     padding: 20px 5px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from '../../Assets/avatar.png'
-export default function Navbar() {
+export default function Navbar({BrowserRoter}) {
     return (
     <div className="navbar-position">
          <div className="navbar-wrap">
@@ -17,7 +17,7 @@ export default function Navbar() {
                         <span>
                         Buy/Sell
                         </span>
-                       <img className="avatarIcaon-nav" src={Avatar} />
+                       <img onClick={()=>BrowserRoter(`/my_account`)} className="avatarIcaon-nav" src={Avatar} />
                  </div>
 
              </div>

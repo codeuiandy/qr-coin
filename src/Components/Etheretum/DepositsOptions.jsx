@@ -6,7 +6,7 @@ export default function DepositsOptions() {
     return (
         <div>
                  <div className="deposit-option-header">
-                               <h1>Receive Etheretum</h1>
+                               <h1>Receive Ethereum</h1>
                                <p>To fund your Qcoin wallet from other wallet services or exchanges:</p>
                                <p>1. Copy and paste your Qcoin wallet address shown below or 
                                   scan the QR code.</p>

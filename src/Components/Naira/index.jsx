@@ -6,9 +6,11 @@ import AtmImg from '../../Assets/atm.png'
 import WithdrawIcon from '../../Assets/withdraw.png'
 import DepositOptions from './DepositsOptions'
 import Withdraw from './Withdraw'
+import BuySell from '../BuySell/BuySellInstant'
 export default function Index(props) {
     let BrowserRoter = props.history.push
     let CurrentRoute = props.location.pathname
+    
     const [activeTab,setActiveTab] = useState("Deposit")
     return (
         <div>
@@ -60,6 +62,7 @@ export default function Index(props) {
                          <div className="acc-bal-col1">
                          {activeTab === "Deposit"?  <DepositOptions /> : ""}
                          {activeTab === "Withdraw"?  <Withdraw /> : ""}
+                         {activeTab === "Buy/Sell"?  <BuySell /> : ""}
                             
 
                           </div>

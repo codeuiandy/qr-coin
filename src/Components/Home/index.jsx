@@ -24,12 +24,15 @@ export default function Index() {
 
                 </div>
 
+                
+
 
 
             </div>
             <div className="footer-image-sec">
             </div>
             <div>
+                
                 <Footer />
             </div>
 

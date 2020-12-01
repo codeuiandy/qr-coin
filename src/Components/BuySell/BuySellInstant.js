@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './buysell.css';
 import Layout from '../Layout/index';
 
-export const BuySellInstant = (props) => {
+
+const BuySell = (props) => {
     const [buySellBtn, setBuySellBtn] = useState({
         buy: true,
         sell: false,
@@ -19,10 +20,9 @@ export const BuySellInstant = (props) => {
             sell: true,
         })
     }
-    let BrowserRoter = props.history.push
-    let CurrentRoute = props.location.pathname
+
     return (
-        <Layout CurrentRoute={CurrentRoute} BrowserRoter={BrowserRoter} >
+    
             <div className="outer-container-box">
                 <div className="inner-container-box">
                     <div className="buy-sell-header">
@@ -87,6 +87,7 @@ export const BuySellInstant = (props) => {
                     </div>
                 </div>
             </div>
-        </Layout>
+       
     )
 }
+export default BuySell

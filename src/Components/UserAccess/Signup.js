@@ -13,7 +13,7 @@ function Signup() {
             <div className="nav-container">
                 <Navbar />
             </div>
-            <div style={{marginTop:"50px"}} className="main-content-body-wrap">
+            <div className="main-content-body-wrap">
                 <div className="container-box">
                     <img src={image} alt="Signup image" className="lock-imgage" />
                     <div className="title-text">Sign Up</div>

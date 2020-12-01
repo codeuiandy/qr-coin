@@ -35,7 +35,7 @@ class App extends Component {
 						<Route exact="/q_coin_dash" path="/q_coin_dash" component={Dash} />
 						<Route exact="/q_coin_ripple" path="/q_coin_ripple" component={Ripple} />
 						<Route exact="/q_coin_tether" path="/q_coin_tether" component={Tether} />
-						<Route exact path="/buy_sell_instantly" component={BuySellInstant} />
+						{/* <Route exact path="/buy_sell_instantly" component={BuySellInstant} /> */}
 						<Route exact path="/my_account" component={MyAccount} />
 						<Route exact path="/two_factor_auth" component={TwoFactorAuth} />
 						<Route exact path="/change_password" component={ChangePassword} />
