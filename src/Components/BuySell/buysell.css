@@ -1,0 +1,64 @@
+h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+.outer-container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    max-width: 810px;
+    min-width: 380px;
+    margin: 20px 0 50px 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.inner-container-box {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    height: 100%;
+    margin: 40px 0px;
+    padding: 40px;
+    justify-content: center;
+    border: 1px solid #ecedef;
+    border-radius: 10px;
+}
+.buy-sell-header {
+    margin-bottom: 20px;
+}
+.buy-sell-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.button-toggle {
+    width: 15%;
+    padding: 10px;
+    border: 1px #f9f9f9 solid;
+}
+.button-buy {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.button-sell {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.buy-sell-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buy-sell-input-container > div {
+    width: 48%;
+}
+.input-select {
+    width: 100%;
+}
