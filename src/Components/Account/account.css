@@ -223,6 +223,30 @@ p {
     width: 95%;
     background-color: #fff;
 }
+.limit-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.limit-content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.limit-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+.limit-btn-wrapper div, .limit-btn-wrapper button {
+    max-width: 250px;
+    min-width: 100px;
+}
+@media screen and (max-width: 967px) {
+    .limit-wrapper {
+        flex-direction: column;
+    }
+}
 .btn-wrapper {
     display: flex;
     align-items: center;

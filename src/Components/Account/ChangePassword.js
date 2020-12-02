@@ -20,7 +20,7 @@ export const ChangePassword = (props) => {
                                     <h5>Change Your Password</h5>
                                 </div>
                                 <div className="setup-body">
-                                    <form onSubmit={() => { }} className="body-form">
+                                    <form onSubmit={() => BrowserRoter("/password_reset_success")} className="body-form">
                                         <label htmlFor="oldpassword">Old Password</label>
                                         <input type="text" name="oldpassword" className="body-form-input" />
                                         <label htmlFor="password">Password*</label>

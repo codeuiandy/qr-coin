@@ -97,7 +97,7 @@ function MyAccount(props) {
                                         </div>
                                         <div className="item-lower-content item-right">
                                             <div className="lower-left btn-btn">
-                                                <button onClick={() => BrowserRoter("/level_1_account_info")} className="account-btn">Verify level 1: Individual account</button>
+                                                <button onClick={() => BrowserRoter("/level_1_personal_info")} className="account-btn">Verify level 1: Individual account</button>
                                             </div>
                                         </div>
                                     </div>
