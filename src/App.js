@@ -19,6 +19,13 @@ import { ChangeCountry } from "./Components/Account/ChangeCountry";
 import { ChangeUsername } from "./Components/Account/ChangeUsername";
 import { DeveloperSettings } from "./Components/Account/DeveloperSettings";
 import { BuySellInstant } from "./Components/BuySell/BuySellInstant";
+import { LevelOnePersonalInfo } from "./Components/Account/LevelOnePersonalInfo";
+import { ConfirmEmail } from "./Components/Modals/ConfirmEmail";
+import { ForgotPassword } from "./Components/Modals/forgotPassword";
+import { PasswordRsetSuccess } from "./Components/Modals/PasswordResetSuccess";
+import { TransactionSuccess } from "./Components/Modals/TrasactionSuccess";
+import { TransactionFailed } from "./Components/Modals/TransactionFailed";
+import { EmmailAddressVerified } from "./Components/Modals/EmailVerified";
 class App extends Component {
 	render() {
 		return (
@@ -41,8 +48,15 @@ class App extends Component {
 						<Route exact path="/change_password" component={ChangePassword} />
 						<Route exact path="/change_username" component={ChangeUsername} />
 						<Route exact path="/level_1_account_info" component={LevelOneAccountInfo} />
+						<Route exact path="/level_1_personal_info" component={LevelOnePersonalInfo} />
 						<Route exact path="/change_country" component={ChangeCountry} />
 						<Route exact path="/developer_settings" component={DeveloperSettings} />
+						<Route exact path="/email_confirmation" component={ConfirmEmail} />
+						<Route exact path="/forgot_password" component={ForgotPassword} />
+						<Route exact path="/password_reset_success" component={PasswordRsetSuccess} />
+						<Route exact path="/transaction_success" component={TransactionSuccess} />
+						<Route exact path="/email_address_verified" component={EmmailAddressVerified} />
+						<Route exact path="/transaction_failed" component={TransactionFailed} />
 						<Route path="*" component={NotFound} />
 					</Switch>
 				</Router>
