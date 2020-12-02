@@ -12,6 +12,7 @@ export default function Index(props) {
     let CurrentRoute = props.location.pathname
     
     const [activeTab,setActiveTab] = useState("Deposit")
+    const [hideBal, setHideBal] = useState(false)
     return (
         <div>
             <Layout CurrentRoute={CurrentRoute} BrowserRoter={BrowserRoter} >
@@ -23,9 +24,12 @@ export default function Index(props) {
                            <div className="account-balance-container">
                                <div className="acc-bal-col1">
                                    <p className="acc-bal-7yhgu">Naira Wallet Balance</p>
-                                   <h4 className="acc-bal-7yu">50,558.00 <span>NGN</span></h4>
+                                   {
+                                       hideBal === true ? "" :  <h4 className="acc-bal-7yu">50,558.00 <span>NGN</span></h4>
+                                   }
+                                  
                                    <div className="toggle-hide-showAcc">
-                                    <span>Hide Balance</span> <input type="checkbox"/>
+                                    <span>Hide Balance</span> <input onClick={()=>setHideBal(!hideBal)} type="checkbox"/>
                                    </div>
                                </div>
                               

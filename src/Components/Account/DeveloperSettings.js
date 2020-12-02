@@ -20,7 +20,7 @@ export const DeveloperSettings = (props) => {
                             <div className="account-title-grp3">
                                 <h5>Developer Settings</h5>
                                 <p>Manage your API keys and webhooks configuration. <br />
-                                    To learn more about integrating with Quidax, visit our Quidax <br />
+                                    To learn more about integrating with QCoin, visit our QCoin <br />
                                     Developer API Documentation.</p>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ export const DeveloperSettings = (props) => {
                                     </div>
                                     <div className="dev-setup-body">
                                         <h6>Secret Key</h6>
-                                        <p>This key should be kept confidential and only stored on your own server. This key can perform any API request to Quidax without restriction</p>
+                                        <p>This key should be kept confidential and only stored on your own server. This key can perform any API request to QCoin without restriction</p>
                                         <div className="token-wrapper dev-secret">
                                             <input type="text" name="secretkey" value="3PSTkurestTyrufnvy6MNYhYreF69KS2" />
                                             <div>
@@ -49,7 +49,7 @@ export const DeveloperSettings = (props) => {
                                         </div>
 
                                         <h6>Public Key</h6>
-                                        <p>Identifies your account with Quidax. It can safely be published in public code.</p>
+                                        <p>Identifies your account with QCoin. It can safely be published in public code.</p>
                                         <div className="token-wrapper">
                                             <input type="text" name="secretkey" value="3PSTkurestTyrufnvy6MNYhYreF69KS2" />
                                             <div>

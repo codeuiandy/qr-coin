@@ -9,6 +9,7 @@ import phoneLockImg from '../../Assets/Path 62352.png';
 import usernameImg from '../../Assets/Group 12819.png';
 import passwoordLockImg from '../../Assets/015---Locked-Payment.png';
 import countryImg from '../../Assets/Path 62343.png';
+import code from '../../Assets/code.png';
 import { useHistory } from 'react-router-dom';
 import Layout from '../Layout/index'
 
@@ -30,7 +31,7 @@ function MyAccount(props) {
                                         <h5>My account</h5>
                                     </div>
                                     <div >
-                                        <p>Manage your Quidax account</p>
+                                        <p>Manage your Q Coin  account</p>
                                     </div>
                                     <div className="header-message">
                                         <div>To secure your account and assets, we strongly that you enable Two Factor Autentication</div>
@@ -131,7 +132,7 @@ function MyAccount(props) {
                                             <h5>Username</h5>
                                         </div>
                                         <div className="text-container item-right">
-                                            <p>Update your username so we can easily identify you here, and on platforms outside of Quidax</p>
+                                            <p>Update your username so we can easily identify you here, and on platforms outside of Q Coin </p>
                                         </div>
                                         <div className="item-lower-content item-right">
                                             <div className="lower-left btn-btn">
@@ -169,7 +170,7 @@ function MyAccount(props) {
                                             <h5>Country</h5>
                                         </div>
                                         <div className="text-container item-right">
-                                            <p>Manage the country from which you wish to operate your Quidax account</p>
+                                            <p>Manage the country from which you wish to operate your Q Coin account</p>
                                         </div>
                                         <div className="item-lower-content item-right">
                                             <div className="lower-left btn-btn">
@@ -181,7 +182,7 @@ function MyAccount(props) {
 
                                 <div className="account-body-item">
                                     <div className="image-container-left">
-                                        <img src={usernameImg} alt="Phone" className="img-email" />
+                                        <img src={code} alt="Phone" className="img-email" />
                                     </div>
                                     <div className="body-item-container">
                                         <div className="label-container item-right">

@@ -18,7 +18,7 @@ export const ChangeCountry = (props) => {
                             <div>
                                 <div className="account-title-top">
                                     <h5>Change your Country</h5>
-                                    <p>Please, note that the country you select determines which local currency wallet you can operate with your quidax account as well as the verification document you might asked to provide.</p>
+                                    <p>Please, note that the country you select determines which local currency wallet you can operate with your QCoin account as well as the verification document you might asked to provide.</p>
                                 </div>
                                 <div className="setup-body">
                                     <form onSubmit={() => { }} className="body-form">
