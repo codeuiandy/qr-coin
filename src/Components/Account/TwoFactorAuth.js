@@ -6,10 +6,12 @@ import "./account.css";
 import barCode from '../../Assets/barCode.png';
 import refresh from '../../Assets/refresh.png';
 import Layout from '../Layout/index'
+import { useHistory } from 'react-router-dom';
 
 export const TwoFactorAuth = (props) => {
     let BrowserRoter = props.history.push
     let CurrentRoute = props.location.pathname
+    const navigate = useHistory();
     return (
         <Layout CurrentRoute={CurrentRoute} BrowserRoter={BrowserRoter} >
             <div className="accouts-1">
@@ -58,7 +60,7 @@ export const TwoFactorAuth = (props) => {
                                                 <label htmlFor="auth-code">Authentication Code*</label>
                                                 <input type="text" name="auth-code" className="body-form-input" />
                                                 <div className="btn-wrapper">
-                                                    <div className="cancel-back-btn" onClick={() => { }}>Cancel</div>
+                                                    <div className="cancel-back-btn" onClick={() => navigate.goBack()}>Cancel</div>
                                                     <input type="submit" value="Enable 2FA" className="submit-form-2-btn" />
                                                 </div>
                                             </form>
