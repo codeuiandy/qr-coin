@@ -11,7 +11,7 @@ export const ConfirmEmail = () => {
             </div>
             <div className="modal-page">
                 <div className="modal-wrapper">
-                    <img src={imgEmail} alt="Email confirmation" className="img-email" />
+                    <img src={imgEmail} alt="Email confirmation" className="img-confirm-email" />
                     <div className="text-top">Follow the link we sent to</div>
                     <div className="text-email">orofin2010@yahoo.com</div>
                     <div className="message-lower">Check your spam folder if you don't see the email immediately</div>

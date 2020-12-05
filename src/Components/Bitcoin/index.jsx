@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import Layout from '../Layout/index'
-import basketImg from '../../Assets/basket.png'
-import BankImg from '../../Assets/bank.png'
-import AtmImg from '../../Assets/atm.png'
+import cartImg from '../../Assets/cart (2).svg'
+import sendImg from '../../Assets/send (5).svg'
+import scanImg from '../../Assets/scan (2).svg'
+import waitingImg from '../../Assets/Waiting.svg'
 import WithdrawIcon from '../../Assets/withdraw.png'
 import DepositOptions from './DepositsOptions'
 import Withdraw from './Withdraw'
 import BuySell from '../BuySell/BuySellInstant'
 export default function Index(props) {
+    const [data, setData] = useState(null)
     let BrowserRoter = props.history.push
     let CurrentRoute = props.location.pathname
     const [activeTab, setActiveTab] = useState("Deposit")
@@ -22,7 +24,7 @@ export default function Index(props) {
                             <div className="account-balance-container">
                                 <div className="acc-bal-col1">
                                     <p className="acc-bal-7yhgu">Bitcoin Wallet Balance</p>
-                                    <h4 className="acc-bal-7yu">50,558.00 <span>NGN</span></h4>
+                                    <h4 className="acc-bal-7yu">0.00 <span>BTC</span></h4>
                                     <div className="toggle-hide-showAcc">
                                         <span>Hide Balance</span> <input type="checkbox" />
                                     </div>
@@ -31,17 +33,17 @@ export default function Index(props) {
                             </div>
                             <div className="action-images-naira">
                                 <div onClick={() => setActiveTab("Deposit")} className={`imgWrap-naira ${activeTab === "Deposit" ? "imgWrap-naira-active" : ""}`}>
-                                    <img src={AtmImg} />
-                                    <span>Deposit</span>
+                                    <img src={scanImg} />
+                                    <span>Receive</span>
                                 </div>
 
                                 <div onClick={() => setActiveTab("Withdraw")} className={`imgWrap-naira ${activeTab === "Withdraw" ? "imgWrap-naira-active" : ""}`}>
-                                    <img src={BankImg} />
-                                    <span>Withdraw</span>
+                                    <img src={sendImg} />
+                                    <span>Send</span>
                                 </div>
 
                                 <div onClick={() => setActiveTab("Buy/Sell")} className={`imgWrap-naira ${activeTab === "Buy/Sell" ? "imgWrap-naira-active" : ""}`}>
-                                    <img src={basketImg} />
+                                    <img src={cartImg} />
                                     <span>Buy/Sell</span>
                                 </div>
 
@@ -71,12 +73,12 @@ export default function Index(props) {
                         <div className="log-box-three">
 
                             <div className="withdraw-header-transations">
-                                <span className="widrawTitle">NGN DEPOSIT HISTORY</span>
+                                <span className="widrawTitle">BTC RECEIVING HISTORY</span>
                                 <span className="widrawPlus">View More</span>
                             </div>
 
-                            {
-                                [...'1234'].map((data) => {
+                            {data !== null &&
+                                data.map((data) => {
                                     return (
                                         <div className="withdraw-transations-body">
 
@@ -106,6 +108,15 @@ export default function Index(props) {
 
                                     )
                                 })
+                            }
+                            {data === null &&
+                                <div className="no-transaction-history">
+                                    <img src={waitingImg} alt="No transaction history" className="icon-no-transaction" />
+                                    <div className="no-transaction-msg">
+                                        <h5>Nothing to show here</h5>
+                                        <h6>You do not have any recent transactions</h6>
+                                    </div>
+                                </div>
                             }
 
 
