@@ -73,7 +73,17 @@ export default function Index(props) {
                         <div className="log-box-three">
 
                             <div className="withdraw-header-transations">
-                                <span className="widrawTitle">BTC RECEIVING HISTORY</span>
+                            {
+                                   activeTab === "Deposit" ?
+                                    <span className="widrawTitle"> BTC RECEIVING HISTORY
+                                    </span>:""
+                                }
+
+{
+                                   activeTab === "Withdraw" ?
+                                    <span className="widrawTitle">BTC SENDING HISTORY</span>:""
+                                }
+
                                 <span className="widrawPlus">View More</span>
                             </div>
 

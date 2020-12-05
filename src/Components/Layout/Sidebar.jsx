@@ -66,7 +66,7 @@ export default function Sidebar(props) {
 
                    <span className="sidebar-link">
                        <span className="routeName">Tether</span>
-                    {CurrentRoute==="/q_coin_tether"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
+                    {CurrentRoute==="/q_coin_tether"?<span className="sidbar-link-total">10000 <span>USDT </span></span> :""}
                     </span>  
                     </div>
 
@@ -81,7 +81,7 @@ export default function Sidebar(props) {
 
                    <span className="sidebar-link">
                        <span className="routeName">Ripple</span>
-                    {CurrentRoute==="/q_coin_ripple"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
+                    {CurrentRoute==="/q_coin_ripple"?<span className="sidbar-link-total">10000 <span>XRP</span></span> :""}
                     </span>  
                     </div>
 
@@ -97,7 +97,7 @@ export default function Sidebar(props) {
 
                    <span className="sidebar-link">
                        <span className="routeName">Dash</span>
-                    {CurrentRoute==="/q_coin_dash"?<span className="sidbar-link-total">10000 <span>NGN</span></span> :""}
+                    {CurrentRoute==="/q_coin_dash"?<span className="sidbar-link-total">10000 <span>DASH</span></span> :""}
                     </span>  
                     </div>
 

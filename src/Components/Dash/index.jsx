@@ -10,7 +10,7 @@ import cardImg from '../../Assets/card.svg';
 import waitingImg from '../../Assets/Waiting.svg'
 
 export default function Index(props) {
-    const [data, setData] = useState([..."1234"])
+    const [data, setData] = useState(null)
     let BrowserRoter = props.history.push
     let CurrentRoute = props.location.pathname
     const [activeTab, setActiveTab] = useState("Deposit")
@@ -24,8 +24,8 @@ export default function Index(props) {
                         <div className="log-box-one">
                             <div className="account-balance-container">
                                 <div className="acc-bal-col1">
-                                    <p className="acc-bal-7yhgu">Bitcoin Wallet Balance</p>
-                                    <h4 className="acc-bal-7yu">50,558.00 <span>NGN</span></h4>
+                                    <p className="acc-bal-7yhgu">Dash Wallet Balance</p>
+                                    <h4 className="acc-bal-7yu">50,558.00 <span>DASH</span></h4>
                                     <div className="toggle-hide-showAcc">
                                         <span>Hide Balance</span> <input type="checkbox" />
                                     </div>
@@ -35,7 +35,7 @@ export default function Index(props) {
                             <div className="action-images-naira">
                                 <div onClick={() => setActiveTab("Deposit")} className={`imgWrap-naira ${activeTab === "Deposit" ? "imgWrap-naira-active" : ""}`}>
                                     <img src={scanImg} />
-                                    <span>Recive</span>
+                                    <span>Receive</span>
                                 </div>
 
                                 <div onClick={() => setActiveTab("Withdraw")} className={`imgWrap-naira ${activeTab === "Withdraw" ? "imgWrap-naira-active" : ""}`}>
@@ -74,7 +74,18 @@ export default function Index(props) {
                         <div className="log-box-three">
 
                             <div className="withdraw-header-transations">
-                                <span className="widrawTitle">NGN DEPOSIT HISTORY</span>
+                            {
+                                   activeTab === "Deposit" ?
+                                    <span className="widrawTitle"> DASH RECEIVING HISTORY
+                                    </span>:""
+                                }
+
+{
+                                   activeTab === "Withdraw" ?
+                                    <span className="widrawTitle">DASH SENDING HISTORY</span>:""
+                                }
+
+                                
                                 <span className="widrawPlus">View More</span>
                             </div>
 

@@ -29,7 +29,7 @@ export default function Withdraw() {
                     </div>
 
                     <div className="add-ammount-1">
-                        <span className="input-ammount-btn">Ripple</span>
+                        <span className="input-ammount-btn">XRP</span>
                         <input type="text" name="address" placeholder="Enter amount" className="input-ammount-1" />
                         <span className="input-ammount-icon">
                             <img src={arrowAltIcon} alt="arrow" className="arrow-alt-1" />
@@ -37,7 +37,7 @@ export default function Withdraw() {
                         <span className="widrawPlus-1">Send all</span>
                     </div>
                     <div className="crypto-bal-1">
-                        <span>Balance: Ripple 0.00</span>
+                        <span>Balance: XRP 0.00</span>
                     </div>
 
 

@@ -24,8 +24,8 @@ export default function Index(props) {
                         <div className="log-box-one">
                             <div className="account-balance-container">
                                 <div className="acc-bal-col1">
-                                    <p className="acc-bal-7yhgu">Bitcoin Wallet Balance</p>
-                                    <h4 className="acc-bal-7yu">50,558.00 <span>NGN</span></h4>
+                                    <p className="acc-bal-7yhgu">Tether Wallet Balance</p>
+                                    <h4 className="acc-bal-7yu">50,558.00 <span>USDT</span></h4>
                                     <div className="toggle-hide-showAcc">
                                         <span>Hide Balance</span> <input type="checkbox" />
                                     </div>
@@ -74,7 +74,17 @@ export default function Index(props) {
                         <div className="log-box-three">
 
                             <div className="withdraw-header-transations">
-                                <span className="widrawTitle">NGN DEPOSIT HISTORY</span>
+                                {
+                                   activeTab === "Deposit" ?
+                                    <span className="widrawTitle"> USDT RECEIVING HISTORY
+                                    </span>:""
+                                }
+
+{
+                                   activeTab === "Withdraw" ?
+                                    <span className="widrawTitle">USDT SENDING HISTORY</span>:""
+                                }
+
                                 <span className="widrawPlus">View More</span>
                             </div>
 
