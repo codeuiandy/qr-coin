@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
 import Layout from '../Layout/index'
-import basketImg from '../../Assets/basket.png'
-import BankImg from '../../Assets/bank.png'
-import AtmImg from '../../Assets/atm.png'
-import WithdrawIcon from '../../Assets/withdraw.png'
 import DepositOptions from './DepositsOptions'
 import Withdraw from './Withdraw'
-import BuySell from '../BuySell/BuySellInstant'
+import BuySell from '../BuySell/BuySellInstant';
+import cartImg from '../../Assets/cart (2).svg'
+import sendImg from '../../Assets/send (5).svg'
+import scanImg from '../../Assets/scan (2).svg'
+import cardImg from '../../Assets/card.svg';
+import waitingImg from '../../Assets/Waiting.svg'
+
 export default function Index(props) {
     let BrowserRoter = props.history.push
     let CurrentRoute = props.location.pathname
+    const [data, setData] = useState([..."123"])
     const [activeTab, setActiveTab] = useState("Deposit")
     return (
         <div>
@@ -31,17 +34,17 @@ export default function Index(props) {
                             </div>
                             <div className="action-images-naira">
                                 <div onClick={() => setActiveTab("Deposit")} className={`imgWrap-naira ${activeTab === "Deposit" ? "imgWrap-naira-active" : ""}`}>
-                                    <img src={AtmImg} />
-                                    <span>Deposit</span>
+                                    <img src={scanImg} />
+                                    <span>Receive</span>
                                 </div>
 
                                 <div onClick={() => setActiveTab("Withdraw")} className={`imgWrap-naira ${activeTab === "Withdraw" ? "imgWrap-naira-active" : ""}`}>
-                                    <img src={BankImg} />
-                                    <span>Withdraw</span>
+                                    <img src={sendImg} />
+                                    <span>Send</span>
                                 </div>
 
                                 <div onClick={() => setActiveTab("Buy/Sell")} className={`imgWrap-naira ${activeTab === "Buy/Sell" ? "imgWrap-naira-active" : ""}`}>
-                                    <img src={basketImg} />
+                                    <img src={cartImg} />
                                     <span>Buy/Sell</span>
                                 </div>
 
@@ -75,13 +78,13 @@ export default function Index(props) {
                                 <span className="widrawPlus">View More</span>
                             </div>
 
-                            {
-                                [...'1234'].map((data) => {
+                            {data !== null &&
+                                data.map((data) => {
                                     return (
                                         <div className="withdraw-transations-body">
 
                                             <div className="tr-icon">
-                                                <img src={WithdrawIcon} alt="" />
+                                                <img src={cardImg} alt="" />
                                             </div>
 
                                             <div className="withdraw-details">
@@ -106,6 +109,15 @@ export default function Index(props) {
 
                                     )
                                 })
+                            }
+                            {data === null &&
+                                <div className="no-transaction-history">
+                                    <img src={waitingImg} alt="No transaction history" className="icon-no-transaction" />
+                                    <div className="no-transaction-msg">
+                                        <h5>Nothing to show here</h5>
+                                        <h6>You do not have any recent transactions</h6>
+                                    </div>
+                                </div>
                             }
 
 

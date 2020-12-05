@@ -180,7 +180,43 @@
   padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
+}
 
+.deposit-header-1{
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F9;
+  width: 95%;
+  height: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+.deposit-option-body-1{
+  display: flex;
+  flex-direction: column;
+  background-color:#0a1531;
+  width: 95%;
+  height: 95%;
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  border: 1px solid rgba(10, 21, 49, 0.04);
+  border-radius: 10px;
+}
+
+.deposit-option-body-1 h5 {
+  color: #fff;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.deposit-option-body-1 p {
+  color: #fff;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 100;
 }
 
 .payment-sytem h1{
@@ -192,6 +228,11 @@
 margin-top: 2px;
 font-size: 12px;
 }
+
+.deposit-header-1 img{
+  padding-left: 10px;
+  padding-right: 10px;
+  }
 
 .deposit-options img{
 padding-left: 10px;
@@ -217,6 +258,67 @@ padding-right: 10px;
   cursor: pointer;
 }
 
+.widrawPlus-1{
+  font-weight: 500;
+  font-size: 0.8em;
+  padding: 4px;
+  width: 30%;
+  min-width: 70px;
+  cursor: pointer;
+}
+
+.input-ammount-btn{
+  font-weight: 500;
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  width: 12%;
+  min-width: 20px;
+  padding: 12px 5px;
+  height: 100%;
+  border-right: 1px solid rgba(10, 21, 49, 0.21);
+  cursor: pointer;
+}
+
+.input-ammount-icon{
+  font-weight: 500;
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  width: 14%;
+  min-width: 20px;
+  padding: 12px 5px;
+  height: 100%;
+  border-right: 1px solid rgba(10, 21, 49, 0.21);
+  cursor: pointer;
+}
+
+.header-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  max-width: 210px;
+  min-width: 140px;
+}
+
+.to-address{
+  color: #FFB500;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.line-under-1 {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #FFB500;
+  color: #ffb500;
+}
+
 .widrawPlus img{
   margin-right: -1px;
   /* padding-top: 10px; */
@@ -238,20 +340,60 @@ padding-right: 10px;
 .input-withdraw-wrap{
   margin-bottom: 17px;
 }
+.add-wallet-address-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(10, 21, 49, 0.21);
+  width: 97%;
+  margin-bottom: 17px;
+  border-radius: 7px;
+}
+.add-ammount-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(10, 21, 49, 0.21);
+  width: 97%;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
+.add-ammount-1 {
+  text-align: center;
+}
+.arrow-alt-1 {
+  width: 20px;
+}
+.add-wallet-address-1 span {
+  text-align: center;
+}
 .amount-withdraw-wrap{
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding-left: 3px;
-    padding-right: 13px;
+  padding-right: 13px;
+}
+
+.crypto-bal-1{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-left: 3px;
+  padding-right: 13px;
+  margin-bottom: 15px;
+}
+
+.crypto-bal-1 span{
+  font-size: 0.7em;
+  color: #0a1531;
+  opacity: 0.69;
 }
 
 .amount-withdraw-wrap span{
- font-size: 0.7em;
- 
-color: #0a1531;
-opacity: 0.69;
-
+  font-size: 0.7em;
+  color: #0a1531;
+  opacity: 0.69;
 }
 
 .withdraw-info{
@@ -272,6 +414,31 @@ font-weight: 500;
 padding: 2px 10px;
 }
 
+.input-address-1 {
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-right: 1px solid rgba(10, 21, 49, 0.21);
+  width: 70%;
+  color: #0a1531;
+  opacity: 0.69;
+  font-weight: 500;
+  padding: 2px 10px;
+}
+
+.input-ammount-1 {
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-right: 1px solid rgba(10, 21, 49, 0.21);
+  width: 45%;
+  min-width: 100px;
+  color: #0a1531;
+  opacity: 0.69;
+  font-weight: 500;
+  padding: 2px 10px;
+}
+
 
 .input-withdraw-wrap select{
   height: 50px;
@@ -286,16 +453,43 @@ text-indent: 1px;
 padding: 2px 7px;
 }
 
+.send-wthdraw-btn {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+}
+.send-now-btn {
+  width: 180px;
+  height: 55px;
+  background: #0d1c3e;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.upgrade-limit-btn {
+  width: 180px;
+  height: 55px;
+  background: #fff;
+  color: #0d1c3e;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #0d1c3e;
+  margin-top: 10px;
+  cursor: pointer;
+}
 .wthdraw-btn button{
   width: 153px;
-height: 55px;
-background: #0d1c3e;
-color: white;
-font-weight: 500;
-border-radius: 4px;
-border: none;
-margin-top: 10px;
-cursor: pointer;
+  height: 55px;
+  background: #0d1c3e;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .withdraw-header-transations{
@@ -316,9 +510,35 @@ cursor: pointer;
   margin-bottom: 30px;
 }
 
+.no-transaction-history {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.icon-no-transaction {
+  width: 10%;
+}
+
+.no-transaction-msg {
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.no-transaction-msg h5, .no-transaction-msg h6 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 .tr-icon{
   width: 10%;
   display: flex;
+  margin: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -936,4 +1156,54 @@ margin-bottom: 45px;
     flex-direction: column;
     justify-content: center;
   }
+}
+/* Added to Naira */
+.enter-ammount-ngn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+.enter-ammount-ngn input {
+  height: 100%;
+  width: 80%;
+  padding: 0 25px;
+  border: none;
+}
+.enter-ammount-ngn span {
+  padding: 13px 15px;
+  border-right: 1px solid rgba(10, 21, 49, 0.21);
+}
+.bottom-desc-text {
+  color: #fff;
+  font-size: 0.7rem;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.pay-now-btn {
+  width: 150px;
+  height: 55px;
+  background: transparent;
+  color: #f5b740;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #f5b740;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.upgrade-limit-btn-1 {
+  width: 180px;
+  height: 55px;
+  background: #f5b740;
+  color: #0a1531;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #0d1c3e;
+  margin-top: 10px;
+  cursor: pointer;
 }

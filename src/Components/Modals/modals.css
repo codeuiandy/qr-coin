@@ -25,7 +25,7 @@
     border-radius: 10px;
     background-color: #fff;
 }
-.img-email {
+.img-confirm-email {
     width: 125px;
     padding: 40px 0;
 }
@@ -91,4 +91,11 @@
 }
 .msg-bal {
     margin-top: 40px;
+}
+
+/* Chat Icon */
+.msg-chat img {
+    width: 76px;
+    height: 76px;
+    background: transparent;
 }
