@@ -51,7 +51,9 @@
 .acc-bal-col1{
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
+  justify-content: center;
+  padding: 0 20px;
+  /* padding-left: 25px; */
   /* padding-top: 15px; */
 }
 
@@ -334,7 +336,7 @@ padding-right: 10px;
 
 .withdraw-wrap form{
   margin-top: 15px;
-  width: 90%;
+  width: 100%;
 }
 
 .input-withdraw-wrap{
@@ -620,8 +622,8 @@ padding: 0 5px 0 10px;
 
 
 .digitalMoneyUsefulLink .digitalMoneyUsefulLink-img img{
-  width: 45%;
-    height: 44%;
+    width: 45%;
+    height: 24%;
     background-size: contain;
     cursor: pointer;
     
@@ -1173,6 +1175,7 @@ margin-bottom: 45px;
   width: 80%;
   padding: 0 25px;
   border: none;
+  background-color: transparent;
 }
 .enter-ammount-ngn span {
   padding: 13px 15px;
@@ -1206,4 +1209,11 @@ margin-bottom: 45px;
   border: 1px solid #0d1c3e;
   margin-top: 10px;
   cursor: pointer;
+}
+
+/* Chat Box */
+.chat-box {
+  position: absolute;
+  margin-top: 36px;
+  right: 10px;
 }

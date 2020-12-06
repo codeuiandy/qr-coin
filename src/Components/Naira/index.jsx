@@ -112,6 +112,9 @@ export default function Index(props) {
                                     )
                                 })
                             }
+                            <div className="chat-box">
+                                <ChatIcon />
+                            </div>
 
 
 

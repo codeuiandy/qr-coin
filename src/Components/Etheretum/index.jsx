@@ -8,6 +8,7 @@ import WithdrawIcon from '../../Assets/withdraw.png'
 import DepositOptions from './DepositsOptions'
 import Withdraw from './Withdraw'
 import BuySell from '../BuySell/BuySellInstant'
+import ChatIcon from '../Modals/ChatIcon'
 
 export default function Index(props) {
     const [data, setData] = useState(null);
@@ -119,7 +120,9 @@ export default function Index(props) {
                                     </div>
                                 </div>
                             }
-
+                            <div className="chat-box">
+                                <ChatIcon />
+                            </div>
 
 
                         </div>
