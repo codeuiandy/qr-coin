@@ -11,7 +11,7 @@ p {
     font-size: 0.8rem;
     font-weight: 200;
 }
-.outer-container-box {
+/* .outer-container-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,22 +20,22 @@ p {
     /* max-width: 810px; */
     /* min-width: 380px; */
     /* margin: 20px 0 50px 0; */
-    border-radius: 8px;
-    background-color: #fff;
-}
-.inner-container-box {
+    /* border-radius: 8px;
+    /*background-color: #fff;
+} */
+/* .inner-container-box {
     display: flex;
     flex-direction: column;
-    width: 82%;
+    width: 100%;
     height: 100%;
     margin: 40px 0px;
     padding: 40px;
     justify-content: center;
     border: 1px solid #ecedef;
     border-radius: 8px;
-}
+} */
 .buy-sell-header {
-    margin-bottom: 20px;
+    margin: 15px 0;
 }
 .buy-sell-header h5 {
     margin-bottom: 20px;
@@ -65,34 +65,61 @@ p {
 .buy-sell-input-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
 }
 .buy-sell-input-container > div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
+    width: 60%;
+    margin: 0 5px;
 }
 @media screen and (max-width: 960px) {
     .buy-sell-input-container {
         flex-direction: column;
     }
+    .buy-sell-input-container > div {
+        width: 100%;
+    }
 }
 .input-select {
-    width: 100%;
+    width: 80%;
     max-width: 250px;
-    min-width: 170px;
+    min-width: 135px;
     height: 50px;
     margin-bottom: 40px;
-    padding-left: 15px;
     font-size: 0.7rem;
     border: 1px solid rgba(10, 21, 49, 0.21);
     border-radius: 8px;
 }
+.input-left-hand-side {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+}
+.input-left-hand-side > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.input-right-hand-side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+.input-right-hand-side > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
 .input-select select {
     width: 95%;
     background-color: #fff;
+    margin-right: 10px;
     font-size: 0.8rem;
+}
+.buy-sell-amount-container {
+    width: 100%;
 }
 .input-feild-1 {
     display: flex;

@@ -8,6 +8,7 @@ import sendImg from '../../Assets/send (5).svg'
 import scanImg from '../../Assets/scan (2).svg'
 import cardImg from '../../Assets/card.svg';
 import waitingImg from '../../Assets/Waiting.svg'
+import ChatIcon from '../Modals/ChatIcon';
 
 export default function Index(props) {
     let BrowserRoter = props.history.push
@@ -129,7 +130,9 @@ export default function Index(props) {
                                     </div>
                                 </div>
                             }
-
+                            <div className="chat-box">
+                                <ChatIcon />
+                            </div>
 
 
                         </div>

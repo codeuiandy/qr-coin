@@ -99,3 +99,7 @@
     height: 76px;
     background: transparent;
 }
+
+.msg-chat:hover {
+    cursor: pointer;
+}

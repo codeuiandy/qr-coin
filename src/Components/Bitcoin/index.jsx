@@ -8,6 +8,7 @@ import WithdrawIcon from '../../Assets/withdraw.png'
 import DepositOptions from './DepositsOptions'
 import Withdraw from './Withdraw'
 import BuySell from '../BuySell/BuySellInstant'
+import ChatIcon from '../Modals/ChatIcon'
 export default function Index(props) {
     const [data, setData] = useState(null)
     let BrowserRoter = props.history.push
@@ -112,6 +113,7 @@ export default function Index(props) {
 
                                                 <div className="hr-line-transations"></div>
 
+
                                             </div>
 
                                         </div>
@@ -129,6 +131,9 @@ export default function Index(props) {
                                 </div>
                             }
 
+                            <div className="chat-box">
+                                <ChatIcon />
+                            </div>
 
 
                         </div>
