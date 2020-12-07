@@ -1241,11 +1241,15 @@ margin-bottom: 45px;
 
 
 @media(max-width:651px){
+  .logs-3-col-box{
+    display: flex;
+    margin-bottom: 20px;
+  }
 
 .log-box-one {
   background-color: transparent;
   grid-area: box1;
-  width: 91%;
+  width: 100%;
   height: fit-content;
   border-radius: 5px;
   display: flex;
