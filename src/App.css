@@ -862,6 +862,7 @@ font-size: 22px;
   position: absolute;
   right: 0;
   padding-right: 40px;
+  width: 70px;
   }
 
   .about-QCOIN-home{
@@ -1249,6 +1250,10 @@ margin-bottom: 45px;
     margin-bottom: 20px;
   }
 
+  .submit-home button img{
+    display: none;
+    }
+
 .log-box-one {
   background-color: transparent;
   grid-area: box1;
@@ -1294,3 +1299,10 @@ margin-bottom: 45px;
 }
 
 }
+
+
+@media (max-width: 407px){
+.hero-text {
+    margin-top: 150px;
+   margin-bottom: 20px;
+}}
