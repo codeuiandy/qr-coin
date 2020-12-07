@@ -182,7 +182,8 @@
         position: relative;
         left: 0;
         width: 100vw;
-        top: 100px;
+        top: 24px;
+        overflow-x: hidden;
     }
 
     .navbar-wrap {
@@ -210,6 +211,10 @@
         padding:10px;
     }
 
+    .backgroundImage-wrap{
+        display: none;
+    }
+
     
 
     #apiDocs .navRoutes{
@@ -227,6 +232,82 @@
       padding-left: 20px;
       padding-top: 40px;
     }
+
+    .ham-toggle {
+        display: block;
+      }
+      
+      #apiDocs {
+        justify-content: left;
+      }
+    
+      #apiDocs .navRoutes{
+      display: none;
+      }
+    
+      #apiDocs .navRoutesActions{
+      margin-left: auto;
+      }
+    
+    
+      #apiDocsWrap{
+        width: 100vw;
+        background: #E5E5E5;
+        height: calc(100vh - 75px);
+      
+      
+      }
+    
+      #apiDocsWrap .generalPadding{
+        padding-left: 20px;
+        padding-top: 40px;
+      }
+    
+    
+      .responsiveSideBar{
+    width: 60vw;
+        z-index: 8;
+      }
+    
+      .responsiveSideBarOpen{
+       animation: showbar 500ms ease-in forwards;
+      }
+    
+      .apiDocsCloseSidebar{
+        animation: hidebar 500ms ease-out forwards;
+       }
+    
+      @keyframes showbar {
+        0%{
+          transform: translateX(-500px);
+        }
+    
+        100%{
+          transform: translateX(0);
+        }
+      }
+    
+    
+      @keyframes hidebar {
+        0%{
+          transform: translateX(0);
+        }
+    
+        100%{
+          transform: translateX(-500px);
+        }
+      }
+    .initSidebarState{
+      transform: translateX(-500px);
+    }
+    #ApiHeader{
+      width: 95%;
+    }
+    
+    .navRoutesLogo {
+      margin-left: 0 !important;
+    }
+    
   }
   
   .ApisideDropdown{
@@ -282,81 +363,7 @@
   @media(max-width:611px){
  
 
-    .ham-toggle {
-      display: block;
-    }
-    
-    #apiDocs {
-      justify-content: left;
-    }
-  
-    #apiDocs .navRoutes{
-    display: none;
-    }
-  
-    #apiDocs .navRoutesActions{
-    margin-left: auto;
-    }
-  
-  
-    #apiDocsWrap{
-      width: 100vw;
-      background: #E5E5E5;
-      height: calc(100vh - 75px);
-    
-    
-    }
-  
-    #apiDocsWrap .generalPadding{
-      padding-left: 20px;
-      padding-top: 40px;
-    }
-  
-  
-    .responsiveSideBar{
-  width: 60vw;
-      z-index: 8;
-    }
-  
-    .responsiveSideBarOpen{
-     animation: showbar 500ms ease-in forwards;
-    }
-  
-    .apiDocsCloseSidebar{
-      animation: hidebar 500ms ease-out forwards;
-     }
-  
-    @keyframes showbar {
-      0%{
-        transform: translateX(-500px);
-      }
-  
-      100%{
-        transform: translateX(0);
-      }
-    }
-  
-  
-    @keyframes hidebar {
-      0%{
-        transform: translateX(0);
-      }
-  
-      100%{
-        transform: translateX(-500px);
-      }
-    }
-  .initSidebarState{
-    transform: translateX(-500px);
-  }
-  #ApiHeader{
-    width: 95%;
-  }
-  
-  .navRoutesLogo {
-    margin-left: 0 !important;
-  }
-  
+   
   }
   
   

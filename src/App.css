@@ -1220,6 +1220,54 @@ margin-bottom: 45px;
 
 
 /* RESPONSIVE Q COIN APP DESIGN BY CODE UI ANDY */
-@media(max-width:1000px){
-  
+@media(max-width:731px){
+  .data-view-col-box {
+    flex-direction: column;
+}
+
+.log-box-two {
+  width: 100%;
+ 
+}
+
+.log-box-three {
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+
+}
+
+
+@media(max-width:651px){
+
+.log-box-one {
+  background-color: transparent;
+  grid-area: box1;
+  width: 91%;
+  height: fit-content;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid rgba(128, 128, 128, 0.37);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.imgWrap-naira {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 18px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 6px 20px 9px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 }
