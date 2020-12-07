@@ -19,8 +19,14 @@ html{
 
 @font-face {
   font-family: AppFont;
-  src: url(../src/Assets/fonts/OpenSans-SemiBold.ttf);
+  src: url(../src/Assets/fonts/Nunito-Regular.ttf);
 }
+
+@font-face {
+  font-family: AppFontBold;
+  src: url(../src/Assets/fonts/Nunito-SemiBold.ttf);
+}
+
 
 
 
@@ -33,10 +39,10 @@ code {
 *{
   font-family: AppFont;
 }
-p,h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
-  font-family: AppFont;
+  font-family: AppFontBold;
 
 }
 p{

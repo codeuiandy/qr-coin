@@ -1,4 +1,6 @@
 import React,{useState} from 'react'
+import {useRecoilState} from 'recoil'
+import {toggleSidebar} from '../../globalState/localData'
 import icon1 from '../../Assets/naira.png'
 import icon2 from '../../Assets/cryptoB.png'
 import icon3 from '../../Assets/ep.png'
@@ -7,10 +9,12 @@ import icon5 from '../../Assets/ripple.png'
 import icon6 from '../../Assets/Dash.png'
 import logo from '../../Assets/logo.png'
 export default function Sidebar(props) {
+    let [sidebarState, setSidebarState] = useRecoilState(toggleSidebar)
     const [activeRoute, SetActiveRoute] = useState("naira")
     let CurrentRoute = props.CurrentRoute
     console.log(props)
     return (
+        <div className={`responsiveSideBar ${sidebarState.openSidebar === true ?"responsiveSideBarOpen" : sidebarState.defaultSidebarApiState}`}>
         <div className="sidebar-wrap">
             
             <ul className="sidebar-list">
@@ -108,6 +112,7 @@ export default function Sidebar(props) {
              
 
             </ul>
+        </div>
         </div>
     )
 }

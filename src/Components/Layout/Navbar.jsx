@@ -1,6 +1,9 @@
 import React from 'react'
+import {useRecoilState} from 'recoil'
+import {toggleSidebar} from '../../globalState/localData'
 import Avatar from '../../Assets/avatar.png'
 export default function Navbar({BrowserRoter}) {
+    let [sidebarState, setSidebarState] = useRecoilState(toggleSidebar)
     return (
     <div className="navbar-position">
          <div className="navbar-wrap">
@@ -11,7 +14,7 @@ export default function Navbar({BrowserRoter}) {
                  </div>
 
                  <div className="nav-actions">
-                        <span>
+                        <span onClick={()=>setSidebarState({...sidebarState,openSidebar:!sidebarState.openSidebar,defaultSidebarApiState:"apiDocsCloseSidebar"})}>
                         Wallets
                         </span>
                         <span>

@@ -141,3 +141,249 @@
 .nav-actions span{
     margin-right: 35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .responsiveSideBar{
+    height: 100vh;
+    background-color: transparent;
+    width: 200px;
+    position: fixed;
+    z-index: 55;
+  }
+  
+  @media(max-width:906px){
+
+    .sidebar-wrap{
+        background-color: white;
+        filter: drop-shadow(10px 1px 5px rgba(128, 128, 128, 0.233));
+    }
+
+    .navbar-wrap{
+        background-color: white;
+        filter: drop-shadow(10px 1px 5px rgba(128, 128, 128, 0.233));
+    }
+
+
+    .app-container {
+        position: relative;
+        left: 0;
+        width: 100vw;
+        top: 100px;
+    }
+
+    .navbar-wrap {
+        height:75px;
+        position: relative;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        padding-left: 30px;
+        z-index: 40;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .active-sidebar-route{
+        background-color: #0a1531;
+        color: white;
+    }
+    .navbar-pad{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding:10px;
+    }
+
+    
+
+    #apiDocs .navRoutes{
+      margin-right: auto;
+      padding-left: 100px;
+    }
+  
+    
+  #apiDocs .navRoutesActions{
+    padding-right: 20px;
+  }
+  
+    
+    #apiDocsWrap .generalPadding{
+      padding-left: 20px;
+      padding-top: 40px;
+    }
+  }
+  
+  .ApisideDropdown{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  
+  .ApisideDropdown .sidebarHeader-list{
+    font-family: Gotham;
+    cursor: pointer;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  border: 0.277929px solid rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-left: none;
+      border-right: none;
+  }
+  
+  .subSidbar-Details{
+    margin-top: 10px;
+    list-style-type: none;
+  }
+  
+  .subSidbar-Details .subSidbar-Details-child{
+    font-family: Gotham;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 11px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  }
+  
+  .ham-toggle {
+    display: none;
+  }
+  
+  @media(max-width:611px){
+ 
+
+    .ham-toggle {
+      display: block;
+    }
+    
+    #apiDocs {
+      justify-content: left;
+    }
+  
+    #apiDocs .navRoutes{
+    display: none;
+    }
+  
+    #apiDocs .navRoutesActions{
+    margin-left: auto;
+    }
+  
+  
+    #apiDocsWrap{
+      width: 100vw;
+      background: #E5E5E5;
+      height: calc(100vh - 75px);
+    
+    
+    }
+  
+    #apiDocsWrap .generalPadding{
+      padding-left: 20px;
+      padding-top: 40px;
+    }
+  
+  
+    .responsiveSideBar{
+  width: 60vw;
+      z-index: 8;
+    }
+  
+    .responsiveSideBarOpen{
+     animation: showbar 500ms ease-in forwards;
+    }
+  
+    .apiDocsCloseSidebar{
+      animation: hidebar 500ms ease-out forwards;
+     }
+  
+    @keyframes showbar {
+      0%{
+        transform: translateX(-500px);
+      }
+  
+      100%{
+        transform: translateX(0);
+      }
+    }
+  
+  
+    @keyframes hidebar {
+      0%{
+        transform: translateX(0);
+      }
+  
+      100%{
+        transform: translateX(-500px);
+      }
+    }
+  .initSidebarState{
+    transform: translateX(-500px);
+  }
+  #ApiHeader{
+    width: 95%;
+  }
+  
+  .navRoutesLogo {
+    margin-left: 0 !important;
+  }
+  
+  }
+  
+  
+  @media(max-width:325px){
+   
+  #apiDocs .navRoutesActions button:last-child{
+    width: 60px;
+    margin-left: 10px;
+   
+  }
+  
+  #apiDocs .navRoutesActions button:first-child{
+    width: 60px;
+  
+   
+  }
+  
+  #apiDocs .navRoutesLogo img{
+  width: 70px;
+  margin-left: 13px;
+  }
+  
+  
+  #apiDocsWrap .generalPadding{
+  
+    padding-top: 10px;
+  }
+  
+  
+  }
