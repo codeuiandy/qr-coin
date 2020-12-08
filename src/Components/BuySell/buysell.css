@@ -69,7 +69,7 @@ p {
     width: 100%;
 }
 .buy-sell-input-container > div {
-    width: 60%;
+    width: 100%;
     margin: 0 5px;
 }
 @media screen and (max-width: 960px) {
@@ -81,8 +81,7 @@ p {
     }
 }
 .input-select {
-    width: 80%;
-    max-width: 250px;
+    width: 100%;
     min-width: 135px;
     height: 50px;
     margin-bottom: 40px;
@@ -114,7 +113,7 @@ p {
 }
 .input-select select {
     width: 95%;
-    background-color: #fff;
+    background-color: transparent;
     margin-right: 10px;
     font-size: 0.8rem;
 }
@@ -125,18 +124,17 @@ p {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 525px;
     min-width: 170px;
     height: 50px;
-    padding-left: 15px;
     font-size: 0.8rem;
-    background-color: #ffb500;
     border-radius: 8px;
 }
 .currency-holder {
     color: #fff;
     background-color: #ffb500;
-    padding: 10px;
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
 }
 .amount-holder {
     width: 95%;
@@ -153,7 +151,6 @@ p {
 .description {
     display: flex;
     justify-content: space-between;
-    max-width: 535px;
     min-width: 170px;
 }
 .input-note {
@@ -161,7 +158,6 @@ p {
 }
 .input-note input {
     width: 100%;
-    max-width: 525px;
     min-width: 170px;
     padding: 0 20px;
     margin: 30px 0;
@@ -179,4 +175,12 @@ p {
     background-color: #0d1c3e;
     border-color: #0d1c3e;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 967px) {
+    .submit-btn button {
+        width: 100%;
+        min-width: 120px;
+        max-width: 999px;
+    }
 }
